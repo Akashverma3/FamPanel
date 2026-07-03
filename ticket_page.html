@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SMM Panel</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="ticket_page.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default custom-navbar">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#mainNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand logo" href="#">
+                FamSMM
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+<li class="active"><a href="home.html">New Order</a></li>
+
+                <li><a href="order_page.html">Order</a></li>
+
+                <li><a href="home.html">Add Funds</a></li>
+
+                <li><a href="service_page.html">Services</a></li>
+
+                <li><a href="ticket_page.html">Ticket</a></li>
+
+                <li><a href="api_page.html">API</a></li>
+
+                <li><a href="transaction_page.html">Transaction</a></li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+<!-- ==========================================
+        TICKETS PAGE - PART 1
+========================================== -->
+
+<section class="tickets-page-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <!-- Ticket Card -->
+
+                <div class="ticket-card">
+
+                    <!-- Tabs -->
+
+                    <ul class="nav nav-tabs ticket-tabs">
+
+                        <li class="active">
+
+                            <a href="#new-ticket"
+                               data-toggle="tab">
+
+                                New Ticket
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#ticket-info"
+                               data-toggle="tab">
+
+                                Info
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- Tab Content -->
+
+                    <div class="tab-content ticket-tab-content">
+
+                        <!-- =========================
+                                NEW TICKET
+                        ========================== -->
+
+                        <div class="tab-pane active"
+                             id="new-ticket">
+
+                            <form action=""
+                                  method="POST"
+                                  class="ticket-form">
+
+
+                                <!-- Subject -->
+
+                                <div class="form-group">
+
+                                    <label class="ticket-label">
+
+                                        Subject
+
+                                    </label>
+
+                                    <select class="form-control ticket-select">
+
+                                        <option>
+
+                                            Order
+
+                                        </option>
+
+                                        <option>
+
+                                            Payment
+
+                                        </option>
+
+                                        <option>
+
+                                            Refill
+
+                                        </option>
+
+                                        <option>
+
+                                            Cancel Order
+
+                                        </option>
+
+                                        <option>
+
+                                            General Support
+
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Order ID -->
+
+                                <div class="form-group">
+
+                                    <label class="ticket-label">
+
+                                        Order ID :
+
+                                        <span class="ticket-note">
+
+                                            (For multiple orders separate using comma)
+
+                                        </span>
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control ticket-input"
+                                        placeholder="Example : 31851525,31851511,31851509">
+
+                                </div>
+                                <!-- ==========================================
+        TICKETS PAGE - PART 2
+========================================== -->
+
+
+<!-- Request -->
+
+<div class="form-group">
+
+    <label class="ticket-label">
+
+        Request
+
+    </label>
+
+    <select class="form-control ticket-select">
+
+        <option>
+
+            Refill
+
+        </option>
+
+        <option>
+
+            Cancel Order
+
+        </option>
+
+        <option>
+
+            Speed Issue
+
+        </option>
+
+        <option>
+
+            Order Not Started
+
+        </option>
+
+        <option>
+
+            Payment Issue
+
+        </option>
+
+        <option>
+
+            General Inquiry
+
+        </option>
+
+    </select>
+
+</div>
+
+
+<!-- Message -->
+
+<div class="form-group">
+
+    <label class="ticket-label">
+
+        Message
+
+    </label>
+
+    <textarea
+        class="form-control ticket-message"
+        rows="8"
+        placeholder="Write your message here..."></textarea>
+
+</div>
+
+
+<!-- Submit Button -->
+
+<div class="form-group">
+
+    <button
+        type="submit"
+        class="btn btn-primary submit-ticket-btn">
+
+        Submit Ticket
+
+    </button>
+
+</div>
+
+</form>
+
+</div>
+
+
+<!-- =========================
+        INFO TAB
+========================= -->
+
+<div class="tab-pane"
+     id="ticket-info">
+
+    <div class="ticket-info-box">
+
+        <h4 class="ticket-info-title">
+
+            Ticket Information
+
+        </h4>
+
+        <p class="ticket-info-text">
+
+            Before creating a support ticket, please make sure
+            your order is eligible for support.
+
+        </p>
+
+        <ul class="ticket-info-list">
+
+            <li>
+
+                ✔ Provide correct Order ID.
+
+            </li>
+
+            <li>
+
+                ✔ Explain your issue clearly.
+
+            </li>
+
+            <li>
+
+                ✔ Do not create duplicate tickets.
+
+            </li>
+
+            <li>
+
+                ✔ Our support team usually replies within 24 hours.
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<!-- ==========================================
+        TICKETS PAGE - PART 3
+========================================== -->
+
+<section class="ticket-history-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Search -->
+
+            <div class="col-md-12">
+
+                <div class="ticket-search-wrapper pull-right">
+
+                    <div class="input-group ticket-search-group">
+
+                        <input
+                            type="text"
+                            class="form-control ticket-search-input"
+                            placeholder="Search tickets">
+
+                        <span class="input-group-btn">
+
+                            <button
+                                class="btn btn-default ticket-search-btn"
+                                type="button">
+
+                                <span class="glyphicon glyphicon-search"></span>
+
+                            </button>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===============================
+                TICKET TABLE
+        ================================ -->
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="ticket-table-card">
+
+                    <div class="table-responsive">
+
+                        <table class="table table-hover ticket-history-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th class="ticket-col-id">
+
+                                        #
+
+                                    </th>
+
+                                    <th class="ticket-col-subject">
+
+                                        Subject
+
+                                    </th>
+
+                                    <th class="ticket-col-status">
+
+                                        Status
+
+                                    </th>
+
+                                    <th class="ticket-col-update">
+
+                                        Last Update
+
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <!-- Empty State -->
+
+                                <tr class="ticket-empty-row">
+
+                                    <td colspan="4"
+                                        class="ticket-empty-message">
+
+                                        No support tickets found.
+
+                                    </td>
+
+                                </tr>
+                                <!-- ==========================================
+        TICKETS PAGE - PART 4
+========================================== -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===============================
+                PAGINATION
+        ================================ -->
+
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+
+                <ul class="pagination ticket-pagination">
+
+                    <li class="disabled">
+
+                        <a href="#">
+
+                            &laquo;
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="#">
+
+                            1
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            2
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            3
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            &raquo;
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+        OPTIONAL FOOTER
+========================================== -->
+
+<footer class="ticket-footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+
+                <p class="ticket-footer-text">
+
+                    Copyright © 2026. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ==========================================
+        OPTIONAL JAVASCRIPT
+========================================== -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>

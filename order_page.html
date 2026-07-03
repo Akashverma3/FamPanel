@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SMM Panel</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="order_page.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default custom-navbar">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#mainNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand logo" href="#">
+                FamSMM
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+
+               
+                <li class="active"><a href="home.html">New Order</a></li>
+
+                <li><a href="order_page.html">Order</a></li>
+
+                <li><a href="home.html">Add Funds</a></li>
+
+                <li><a href="service_page.html">Services</a></li>
+
+                <li><a href="ticket_page.html">Ticket</a></li>
+
+                <li><a href="api_page.html">API</a></li>
+
+                <li><a href="transaction_page.html">Transaction</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<section class="order-history-section">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="order-history-card">
+
+                    <!-- Page Header -->
+
+                    <div class="order-page-header clearfix">
+
+                        <div class="pull-left">
+
+                            <h3 class="order-page-title">
+
+                                Order History
+
+                            </h3>
+
+                            <p class="order-page-subtitle">
+
+                                View and manage all your SMM orders.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Status Tabs -->
+
+                    <div class="order-filter-wrapper">
+
+                        <ul class="nav nav-pills order-status-tabs">
+
+                            <li class="active">
+
+                                <a href="#">
+
+                                    All
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">
+
+                                    Pending
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">
+
+                                    In Progress
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">
+
+                                    Completed
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">
+
+                                    Partial
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">
+
+                                    Canceled
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Search Box -->
+
+                    <div class="row order-search-row">
+
+                        <div class="col-md-4 col-md-offset-8 col-sm-6 col-sm-offset-6">
+
+                            <div class="input-group order-search-box">
+
+                                <input
+                                    type="text"
+                                    class="form-control order-search-input"
+                                    placeholder="Search orders...">
+
+                                <span class="input-group-btn">
+
+                                    <button
+                                        class="btn btn-default order-search-btn"
+                                        type="button">
+
+                                        <span class="glyphicon glyphicon-search"></span>
+
+                                    </button>
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+        ORDER HISTORY PAGE - PART 2
+        Orders Table
+========================================== -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="orders-table-card">
+
+            <div class="table-responsive">
+
+                <table class="table table-hover orders-history-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Date</th>
+
+                            <th>Link</th>
+
+                            <th>Charge</th>
+
+                            <th>Start Count</th>
+
+                            <th>Quantity</th>
+
+                            <th>Service</th>
+
+                            <th>Status</th>
+
+                            <th>Remains</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <!-- Sample Row -->
+
+                        <tr>
+
+                            <td>#12548</td>
+
+                            <td>02 Jul 2026</td>
+
+                            <td>
+
+                                <a href="#" class="order-link">
+
+                                    https://instagram.com/post/abc123
+
+                                </a>
+
+                            </td>
+
+                            <td>₹120.00</td>
+
+                            <td>4,580</td>
+
+                            <td>1,000</td>
+
+                            <td>
+
+                                Instagram Followers
+
+                            </td>
+
+                            <td>
+
+                                <span class="status-badge status-progress">
+
+                                    In Progress
+
+                                </span>
+
+                            </td>
+
+                            <td>420</td>
+
+                        </tr>
+
+                        <!-- Sample Row -->
+
+                        <tr>
+
+                            <td>#12547</td>
+
+                            <td>01 Jul 2026</td>
+
+                            <td>
+
+                                <a href="#" class="order-link">
+
+                                    https://youtube.com/watch?v=xyz
+
+                                </a>
+
+                            </td>
+
+                            <td>₹250.00</td>
+
+                            <td>10,200</td>
+
+                            <td>5,000</td>
+
+                            <td>
+
+                                YouTube Views
+
+                            </td>
+
+                            <td>
+
+                                <span class="status-badge status-completed">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                            <td>0</td>
+
+                        </tr>
+
+                        <!-- Empty State -->
+
+                        <!--
+
+                        <tr>
+
+                            <td colspan="9" class="empty-orders">
+
+                                <span class="glyphicon glyphicon-inbox"></span>
+
+                                <br><br>
+
+                                No Orders Found
+
+                            </td>
+
+                        </tr>
+
+                        -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ==========================================
+        ORDER HISTORY PAGE - PART 3
+        Pagination + Summary + Footer
+========================================== -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <!-- Pagination -->
+
+        <div class="order-pagination-wrapper clearfix">
+
+            <div class="pull-left">
+
+                <ul class="pagination order-pagination">
+
+                    <li class="disabled">
+
+                        <a href="#">
+
+                            &laquo;
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="#">
+
+                            1
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            2
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            3
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            &raquo;
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+            ORDER SUMMARY
+========================================== -->
+
+<div class="row">
+
+    <div class="col-md-4 col-sm-6">
+
+        <div class="summary-card summary-total">
+
+            <span class="glyphicon glyphicon-list-alt summary-icon"></span>
+
+            <h4 class="summary-title">
+
+                Total Orders
+
+            </h4>
+
+            <h2 class="summary-count">
+
+                152
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-md-4 col-sm-6">
+
+        <div class="summary-card summary-completed">
+
+            <span class="glyphicon glyphicon-ok-circle summary-icon"></span>
+
+            <h4 class="summary-title">
+
+                Completed
+
+            </h4>
+
+            <h2 class="summary-count">
+
+                120
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-md-4 col-sm-6">
+
+        <div class="summary-card summary-pending">
+
+            <span class="glyphicon glyphicon-time summary-icon"></span>
+
+            <h4 class="summary-title">
+
+                Pending
+
+            </h4>
+
+            <h2 class="summary-count">
+
+                32
+
+            </h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+                HELP CARD
+========================================== -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="orders-help-card">
+
+            <span class="glyphicon glyphicon-info-sign help-card-icon"></span>
+
+            <h3 class="help-card-title">
+
+                Need Help?
+
+            </h3>
+
+            <p class="help-card-text">
+
+                If any order is delayed or cancelled, please contact
+                our support team with your Order ID.
+
+            </p>
+
+            <a href="#"
+
+               class="btn btn-primary contact-support-btn">
+
+                Contact Support
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+                FOOTER
+========================================== -->
+
+<footer class="orders-footer">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-sm-6">
+
+                <p class="footer-text">
+
+                    © 2026 SMM Panel. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+            <div class="col-sm-6 text-right">
+
+                <ul class="footer-menu">
+
+                    <li>
+
+                        <a href="#">
+
+                            Privacy Policy
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Terms
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<!-- ==========================================
+        ORDER HISTORY PAGE - PART 4
+        Floating Buttons + Bottom Pagination
+========================================== -->
+
+
+<!-- Floating Social Buttons -->
+
+<div class="floating-social-buttons">
+
+    <!-- Telegram -->
+
+    <a href="#"
+       class="floating-btn telegram-btn">
+
+        <img src="images/telegram.png"
+             alt="Telegram"
+             class="floating-icon">
+
+    </a>
+
+    <!-- WhatsApp -->
+
+    <a href="#"
+       class="floating-btn whatsapp-btn">
+
+        <img src="images/whatsapp.png"
+             alt="WhatsApp"
+             class="floating-icon">
+
+    </a>
+
+</div>
+
+
+
+<!-- Bottom Pagination -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="bottom-pagination-wrapper">
+
+            <ul class="pagination bottom-pagination">
+
+                <li>
+
+                    <a href="#">
+
+                        &laquo;
+
+                    </a>
+
+                </li>
+
+                <li class="active">
+
+                    <a href="#">
+
+                        1
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        2
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        3
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        4
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#">
+
+                        &raquo;
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Empty Order Message -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="no-order-card">
+
+            <span class="glyphicon glyphicon-folder-open no-order-icon"></span>
+
+            <h3 class="no-order-title">
+
+                No Orders Available
+
+            </h3>
+
+            <p class="no-order-text">
+
+                You haven't placed any orders yet.
+
+                Your orders will appear here once you submit a new order.
+
+            </p>
+
+            <a href="new-order.html"
+
+               class="btn btn-primary new-order-btn">
+
+                Place New Order
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>

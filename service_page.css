@@ -1,0 +1,1357 @@
+.custom-navbar{
+    background:#fff;
+    border:none;
+    border-radius:0;
+    margin-bottom:0;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.custom-navbar .navbar-brand.logo{
+    color:#0d6efd;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+    height:70px;
+    line-height:40px;
+}
+
+.custom-navbar .navbar-nav>li>a{
+
+    color:#444;
+    font-size:15px;
+    font-weight:600;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.custom-navbar .navbar-nav>li>a:hover{
+    color:#0d6efd;
+    background:transparent;
+}
+
+.custom-navbar .navbar-nav>.active>a,
+.custom-navbar .navbar-nav>.active>a:hover{
+    background:transparent;
+    color:#0d6efd;
+}
+
+.navbar-toggle{
+    margin-top:18px;
+}
+/*==================================================
+        SERVICES PAGE CSS - PART 1
+        Layout + Banner + Table
+==================================================*/
+
+
+/*==================================
+        PAGE BACKGROUND
+==================================*/
+
+.services-page-section{
+
+    background:#f5f7fb;
+
+    padding:30px 0;
+
+    min-height:100vh;
+
+}
+
+
+/*==================================
+        BANNER CARD
+==================================*/
+
+.services-banner-card{
+
+    background:linear-gradient(135deg,#0d6efd,#4f8cff);
+
+    color:#fff;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 30px rgba(13,110,253,.20);
+
+}
+
+.services-banner-title{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    line-height:1.4;
+
+}
+
+.services-banner-text{
+
+    margin-top:15px;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    opacity:.95;
+
+}
+
+
+/*==================================
+        TABLE CARD
+==================================*/
+
+.services-table-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================
+        TABLE
+==================================*/
+
+.services-table{
+
+    margin-bottom:0;
+
+    min-width:1000px;
+
+    border-collapse:collapse;
+
+}
+
+
+/*==================================
+        TABLE HEADER
+==================================*/
+
+.services-table thead{
+
+    background:#0d6efd;
+
+}
+
+.services-table thead th{
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    text-align:center;
+
+    padding:16px 12px;
+
+    border:none;
+
+    vertical-align:middle;
+
+    white-space:nowrap;
+
+}
+
+.services-table thead th small{
+
+    color:#dbe8ff;
+
+    font-size:11px;
+
+}
+
+
+/*==================================
+        COLUMN WIDTH
+==================================*/
+
+.service-id{
+
+    width:80px;
+
+}
+
+.service-name{
+
+    min-width:350px;
+
+}
+
+.service-rate{
+
+    width:110px;
+
+}
+
+.service-min{
+
+    width:90px;
+
+}
+
+.service-max{
+
+    width:100px;
+
+}
+
+.service-average{
+
+    width:150px;
+
+}
+
+.service-description{
+
+    width:140px;
+
+}
+
+
+/*==================================
+        TABLE RESPONSIVE
+==================================*/
+
+.table-responsive{
+
+    border:none;
+
+}
+
+
+/*==================================
+        SCROLLBAR
+==================================*/
+
+.table-responsive::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+
+    background:#0d6efd;
+
+    border-radius:10px;
+
+}
+
+.table-responsive::-webkit-scrollbar-track{
+
+    background:#edf2f7;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.services-banner-card{
+
+    padding:30px;
+
+}
+
+.services-table-card{
+
+    padding:20px;
+
+}
+
+.services-banner-title{
+
+    font-size:24px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.services-page-section{
+
+    padding:15px 0;
+
+}
+
+.services-banner-card{
+
+    padding:20px;
+
+    border-radius:12px;
+
+}
+
+.services-banner-title{
+
+    font-size:20px;
+
+}
+
+.services-banner-text{
+
+    font-size:14px;
+
+}
+
+.services-table-card{
+
+    padding:15px;
+
+    border-radius:12px;
+
+}
+
+.services-table{
+
+    min-width:900px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.services-banner-title{
+
+    font-size:18px;
+
+}
+
+.services-banner-text{
+
+    font-size:13px;
+
+}
+
+.services-table-card{
+
+    padding:12px;
+
+}
+
+}
+/*==================================================
+        SERVICES PAGE CSS - PART 2
+        Category + Service Rows
+==================================================*/
+
+
+/*==================================
+        CATEGORY ROW
+==================================*/
+
+.category-row{
+
+    background:#eef5ff;
+
+}
+
+.category-row td{
+
+    padding:14px 18px !important;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0d6efd;
+
+    border-top:2px solid #d7e8ff !important;
+
+    border-bottom:2px solid #d7e8ff !important;
+
+}
+
+
+/*==================================
+        SERVICE ROW
+==================================*/
+
+.service-row{
+
+    background:#ffffff;
+
+    transition:all .3s ease;
+
+}
+
+.service-row td{
+
+    padding:15px 12px;
+
+    vertical-align:middle;
+
+    text-align:center;
+
+    font-size:14px;
+
+    color:#444;
+
+    border-top:1px solid #edf2f7;
+
+}
+
+.service-row:hover{
+
+    background:#f8fbff;
+
+    transform:scale(1.002);
+
+}
+
+
+/*==================================
+        SERVICE TITLE
+==================================*/
+
+.service-title{
+
+    text-align:left !important;
+
+    font-weight:500;
+
+    color:#222;
+
+    line-height:1.7;
+
+    min-width:320px;
+
+}
+
+
+/*==================================
+        SERVICE ID
+==================================*/
+
+.service-id{
+
+    font-weight:700;
+
+    color:#0d6efd;
+
+}
+
+
+/*==================================
+        PRICE
+==================================*/
+
+.service-price{
+
+    color:#28a745;
+
+    font-weight:700;
+
+}
+
+
+/*==================================
+        MIN / MAX
+==================================*/
+
+.service-row td:nth-child(4),
+
+.service-row td:nth-child(5){
+
+    color:#666;
+
+    font-weight:500;
+
+}
+
+
+/*==================================
+        AVERAGE TIME
+==================================*/
+
+.service-row td:nth-child(6){
+
+    color:#ff9800;
+
+    font-weight:600;
+
+}
+
+
+/*==================================
+        VIEW DETAILS BUTTON
+==================================*/
+
+.view-details-btn{
+
+    border-radius:25px;
+
+    padding:7px 18px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    border:none;
+
+    transition:.3s;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.view-details-btn:hover{
+
+    background:#0b5ed7;
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(13,110,253,.25);
+
+}
+
+
+/*==================================
+        TABLE ROW ANIMATION
+==================================*/
+
+.services-table tbody tr{
+
+    transition:.25s;
+
+}
+
+
+/*==================================
+        ALTERNATE ROW COLOR
+==================================*/
+
+.services-table tbody tr:nth-child(even):not(.category-row){
+
+    background:#fcfcfd;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.service-title{
+
+    min-width:280px;
+
+}
+
+.service-row td{
+
+    font-size:13px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.category-row td{
+
+    font-size:14px;
+
+    padding:12px !important;
+
+}
+
+.service-title{
+
+    min-width:240px;
+
+    font-size:13px;
+
+}
+
+.service-row td{
+
+    padding:12px 10px;
+
+    font-size:13px;
+
+}
+
+.view-details-btn{
+
+    padding:6px 14px;
+
+    font-size:11px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.service-title{
+
+    min-width:220px;
+
+}
+
+.service-row td{
+
+    font-size:12px;
+
+}
+
+.view-details-btn{
+
+    padding:5px 12px;
+
+    font-size:10px;
+
+}
+
+}
+/*==================================================
+        SERVICES PAGE CSS - PART 3
+        Pagination + Search + Utilities
+==================================================*/
+
+
+/*==================================
+        PAGINATION
+==================================*/
+
+.services-pagination{
+
+    margin:35px 0 10px;
+
+}
+
+.services-pagination>li{
+
+    display:inline-block;
+
+}
+
+.services-pagination>li>a,
+
+.services-pagination>li>span{
+
+    color:#0d6efd;
+
+    border:1px solid #d9e3f2;
+
+    padding:10px 16px;
+
+    margin:0 4px;
+
+    border-radius:8px;
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+.services-pagination>li>a:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border-color:#0d6efd;
+
+}
+
+.services-pagination>.active>a,
+
+.services-pagination>.active>a:hover,
+
+.services-pagination>.active>span{
+
+    background:#0d6efd;
+
+    border-color:#0d6efd;
+
+    color:#fff;
+
+}
+
+.services-pagination>.disabled>a{
+
+    color:#b7b7b7;
+
+    cursor:not-allowed;
+
+}
+
+
+/*==================================
+        SEARCH SECTION
+==================================*/
+
+.services-search-wrapper{
+
+    margin-bottom:25px;
+
+}
+
+.services-search-box{
+
+    position:relative;
+
+}
+
+.services-search-input{
+
+    width:100%;
+
+    height:48px;
+
+    border:1px solid #d9e3f2;
+
+    border-radius:8px;
+
+    padding:0 15px;
+
+    box-shadow:none;
+
+    transition:.3s;
+
+}
+
+.services-search-input:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 0 3px rgba(13,110,253,.10);
+
+}
+
+.services-search-btn{
+
+    height:48px;
+
+    border-radius:8px;
+
+    padding:0 25px;
+
+}
+
+
+/*==================================
+        SERVICE BADGES
+==================================*/
+
+.service-badge{
+
+    display:inline-block;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:11px;
+
+    font-weight:600;
+
+}
+
+.badge-new{
+
+    background:#28a745;
+
+    color:#fff;
+
+}
+
+.badge-popular{
+
+    background:#ff9800;
+
+    color:#fff;
+
+}
+
+.badge-best{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.badge-refill{
+
+    background:#6f42c1;
+
+    color:#fff;
+
+}
+
+
+/*==================================
+        TABLE FOOTER
+==================================*/
+
+.services-table-footer{
+
+    margin-top:20px;
+
+    padding:18px 20px;
+
+    background:#f8fbff;
+
+    border:1px solid #e7eef8;
+
+    border-radius:10px;
+
+}
+
+.services-table-footer p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================
+        LOADING
+==================================*/
+
+.loading-services{
+
+    text-align:center;
+
+    padding:35px;
+
+    color:#888;
+
+}
+
+.loading-services .glyphicon{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.services-pagination>li>a{
+
+    padding:8px 14px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.services-search-input{
+
+    height:44px;
+
+    font-size:13px;
+
+}
+
+.services-search-btn{
+
+    height:44px;
+
+    padding:0 18px;
+
+}
+
+.services-pagination{
+
+    text-align:center;
+
+}
+
+.services-pagination>li>a{
+
+    margin:2px;
+
+    padding:7px 12px;
+
+}
+
+.services-table-footer{
+
+    padding:15px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.services-pagination>li>a{
+
+    padding:6px 10px;
+
+    font-size:12px;
+
+}
+
+.services-search-input{
+
+    height:40px;
+
+    font-size:12px;
+
+}
+
+.services-search-btn{
+
+    height:40px;
+
+}
+
+.service-badge{
+
+    font-size:10px;
+
+    padding:4px 10px;
+
+}
+
+}
+/*==================================================
+        SERVICES PAGE CSS - PART 4
+        Footer + Floating Buttons + Animation
+==================================================*/
+
+
+/*==================================
+        FOOTER
+==================================*/
+
+.services-footer{
+
+    background:#1f2937;
+
+    padding:25px 0;
+
+    margin-top:40px;
+
+}
+
+.services-footer-text{
+
+    color:#d1d5db;
+
+    font-size:14px;
+
+    margin:0;
+
+}
+
+.services-footer-links{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+    text-align:right;
+
+}
+
+.services-footer-links li{
+
+    display:inline-block;
+
+    margin-left:20px;
+
+}
+
+.services-footer-links li a{
+
+    color:#d1d5db;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.services-footer-links li a:hover{
+
+    color:#0d6efd;
+
+}
+
+
+/*==================================
+        FLOATING BUTTONS
+==================================*/
+
+.floating-social{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:9999;
+
+}
+
+.floating-social a{
+
+    display:block;
+
+    width:55px;
+
+    height:55px;
+
+    line-height:55px;
+
+    text-align:center;
+
+    border-radius:50%;
+
+    margin-top:12px;
+
+    color:#fff;
+
+    font-size:22px;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+    transition:.3s;
+
+}
+
+.floating-social a:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.telegram-float{
+
+    background:#0088cc;
+
+}
+
+.whatsapp-float{
+
+    background:#25d366;
+
+}
+
+
+/*==================================
+        SCROLL TO TOP
+==================================*/
+
+.scroll-top{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:160px;
+
+    width:50px;
+
+    height:50px;
+
+    line-height:50px;
+
+    text-align:center;
+
+    border-radius:50%;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+    box-shadow:0 8px 20px rgba(13,110,253,.25);
+
+    transition:.3s;
+
+}
+
+.scroll-top:hover{
+
+    background:#0b5ed7;
+
+}
+
+
+/*==================================
+        CARD ANIMATION
+==================================*/
+
+.services-banner-card,
+
+.services-table-card{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================
+        BUTTON EFFECT
+==================================*/
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/*==================================
+        LINK EFFECT
+==================================*/
+
+a{
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.services-footer-links{
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.services-footer{
+
+    text-align:center;
+
+}
+
+.services-footer-links{
+
+    text-align:center;
+
+}
+
+.services-footer-links li{
+
+    display:block;
+
+    margin:10px 0;
+
+}
+
+.floating-social{
+
+    right:15px;
+
+    bottom:15px;
+
+}
+
+.floating-social a{
+
+    width:48px;
+
+    height:48px;
+
+    line-height:48px;
+
+    font-size:20px;
+
+}
+
+.scroll-top{
+
+    width:45px;
+
+    height:45px;
+
+    line-height:45px;
+
+    bottom:135px;
+
+    right:15px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.services-page-section{
+
+    padding:10px 0;
+
+}
+
+.services-banner-card{
+
+    padding:18px;
+
+}
+
+.services-table-card{
+
+    padding:10px;
+
+}
+
+.floating-social a{
+
+    width:42px;
+
+    height:42px;
+
+    line-height:42px;
+
+    font-size:18px;
+
+}
+
+.scroll-top{
+
+    width:40px;
+
+    height:40px;
+
+    line-height:40px;
+
+    font-size:16px;
+
+}
+
+.services-footer-text{
+
+    font-size:12px;
+
+}
+
+}

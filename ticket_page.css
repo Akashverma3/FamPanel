@@ -1,0 +1,1365 @@
+/*==================================================
+        TICKETS PAGE CSS - PART 1
+        Layout + Card + Form
+==================================================*/
+
+.custom-navbar{
+    background:#fff;
+    border:none;
+    border-radius:0;
+    margin-bottom:0;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.custom-navbar .navbar-brand.logo{
+    color:#0d6efd;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+    height:70px;
+    line-height:40px;
+}
+
+.custom-navbar .navbar-nav>li>a{
+
+    color:#444;
+    font-size:15px;
+    font-weight:600;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.custom-navbar .navbar-nav>li>a:hover{
+    color:#0d6efd;
+    background:transparent;
+}
+
+.custom-navbar .navbar-nav>.active>a,
+.custom-navbar .navbar-nav>.active>a:hover{
+    background:transparent;
+    color:#0d6efd;
+}
+
+.navbar-toggle{
+    margin-top:18px;
+}
+/*==================================
+        PAGE
+==================================*/
+
+.tickets-page-section{
+
+    background:#f5f7fb;
+
+    padding:30px 0;
+
+    min-height:100vh;
+
+}
+
+
+/*==================================
+        CARD
+==================================*/
+
+.ticket-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================
+        NAV TABS
+==================================*/
+
+.ticket-tabs{
+
+    border-bottom:1px solid #e8edf5;
+
+    background:#ffffff;
+
+    padding:0 20px;
+
+}
+
+.ticket-tabs>li{
+
+    margin-bottom:-1px;
+
+}
+
+.ticket-tabs>li>a{
+
+    border:none;
+
+    color:#555;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    padding:16px 22px;
+
+    transition:.3s;
+
+}
+
+.ticket-tabs>li>a:hover{
+
+    background:#f8fbff;
+
+    color:#0d6efd;
+
+}
+
+.ticket-tabs>li.active>a,
+
+.ticket-tabs>li.active>a:hover,
+
+.ticket-tabs>li.active>a:focus{
+
+    border:none;
+
+    color:#0d6efd;
+
+    background:#fff;
+
+    border-bottom:3px solid #0d6efd;
+
+}
+
+
+/*==================================
+        TAB CONTENT
+==================================*/
+
+.ticket-tab-content{
+
+    padding:30px;
+
+}
+
+
+/*==================================
+        LABEL
+==================================*/
+
+.ticket-label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.ticket-note{
+
+    color:#999;
+
+    font-size:12px;
+
+    font-weight:400;
+
+}
+
+
+/*==================================
+        INPUT & SELECT
+==================================*/
+
+.ticket-input,
+
+.ticket-select{
+
+    height:48px;
+
+    border:1px solid #d9e3f2;
+
+    border-radius:8px;
+
+    box-shadow:none;
+
+    transition:.3s;
+
+}
+
+.ticket-input:focus,
+
+.ticket-select:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 0 3px rgba(13,110,253,.10);
+
+}
+
+
+/*==================================
+        TEXTAREA
+==================================*/
+
+.ticket-message{
+
+    min-height:180px;
+
+    border:1px solid #d9e3f2;
+
+    border-radius:8px;
+
+    resize:vertical;
+
+    padding:12px;
+
+    box-shadow:none;
+
+    transition:.3s;
+
+}
+
+.ticket-message:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 0 3px rgba(13,110,253,.10);
+
+}
+
+
+/*==================================
+        FORM GROUP
+==================================*/
+
+.ticket-form .form-group{
+
+    margin-bottom:22px;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.ticket-tab-content{
+
+    padding:25px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.tickets-page-section{
+
+    padding:15px 0;
+
+}
+
+.ticket-card{
+
+    border-radius:12px;
+
+}
+
+.ticket-tabs{
+
+    padding:0 10px;
+
+}
+
+.ticket-tabs>li>a{
+
+    padding:14px 12px;
+
+    font-size:13px;
+
+}
+
+.ticket-tab-content{
+
+    padding:20px;
+
+}
+
+.ticket-input,
+
+.ticket-select{
+
+    height:44px;
+
+}
+
+.ticket-message{
+
+    min-height:150px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.ticket-tab-content{
+
+    padding:15px;
+
+}
+
+.ticket-tabs>li>a{
+
+    padding:12px 10px;
+
+    font-size:12px;
+
+}
+
+.ticket-label{
+
+    font-size:13px;
+
+}
+
+.ticket-note{
+
+    display:block;
+
+    margin-top:4px;
+
+}
+
+.ticket-message{
+
+    min-height:130px;
+
+}
+
+}
+/*==================================================
+        TICKETS PAGE CSS - PART 2
+        Button + Info + Search + Table
+==================================================*/
+
+
+/*==================================
+        SUBMIT BUTTON
+==================================*/
+
+.submit-ticket-btn{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:12px 35px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.submit-ticket-btn:hover{
+
+    background:#0b5ed7;
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(13,110,253,.25);
+
+}
+
+
+/*==================================
+        INFO BOX
+==================================*/
+
+.ticket-info-box{
+
+    background:#f8fbff;
+
+    border:1px solid #dbe8ff;
+
+    border-left:5px solid #0d6efd;
+
+    border-radius:10px;
+
+    padding:25px;
+
+}
+
+.ticket-info-title{
+
+    margin-top:0;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+.ticket-info-text{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+.ticket-info-list{
+
+    padding-left:20px;
+
+    margin:0;
+
+}
+
+.ticket-info-list li{
+
+    margin-bottom:10px;
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+
+/*==================================
+        SEARCH SECTION
+==================================*/
+
+.ticket-search-wrapper{
+
+    margin-bottom:20px;
+
+}
+
+.ticket-search-group{
+
+    max-width:320px;
+
+    float:right;
+
+}
+
+.ticket-search-input{
+
+    height:44px;
+
+    border:1px solid #d9e3f2;
+
+    border-right:none;
+
+    border-radius:8px 0 0 8px;
+
+    box-shadow:none;
+
+}
+
+.ticket-search-input:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:none;
+
+}
+
+.ticket-search-btn{
+
+    height:44px;
+
+    border-radius:0 8px 8px 0;
+
+    border:1px solid #d9e3f2;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.ticket-search-btn:hover{
+
+    background:#0b5ed7;
+
+    color:#fff;
+
+}
+
+
+/*==================================
+        TABLE CARD
+==================================*/
+
+.ticket-table-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================
+        TABLE
+==================================*/
+
+.ticket-history-table{
+
+    margin-bottom:0;
+
+    min-width:700px;
+
+}
+
+.ticket-history-table thead{
+
+    background:#0d6efd;
+
+}
+
+.ticket-history-table thead th{
+
+    color:#fff;
+
+    border:none;
+
+    text-align:center;
+
+    padding:15px 12px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.table-responsive{
+
+    border:none;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.ticket-table-card{
+
+    padding:20px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.ticket-search-group{
+
+    max-width:100%;
+
+    float:none;
+
+}
+
+.ticket-search-input,
+
+.ticket-search-btn{
+
+    height:42px;
+
+}
+
+.ticket-table-card{
+
+    padding:15px;
+
+    border-radius:12px;
+
+}
+
+.ticket-history-table{
+
+    min-width:650px;
+
+}
+
+.ticket-info-box{
+
+    padding:20px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.ticket-info-title{
+
+    font-size:18px;
+
+}
+
+.ticket-info-text{
+
+    font-size:13px;
+
+}
+
+.ticket-table-card{
+
+    padding:12px;
+
+}
+
+}
+/*==================================================
+        TICKETS PAGE CSS - PART 3
+        Table Rows + Status + Pagination
+==================================================*/
+
+
+/*==================================
+        TABLE BODY
+==================================*/
+
+.ticket-history-table tbody td{
+
+    padding:15px 12px;
+
+    text-align:center;
+
+    vertical-align:middle;
+
+    border-top:1px solid #eef2f7;
+
+    font-size:14px;
+
+    color:#444;
+
+    transition:.3s;
+
+}
+
+.ticket-history-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.ticket-history-table tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+
+/*==================================
+        TICKET ID
+==================================*/
+
+.ticket-col-id{
+
+    width:80px;
+
+}
+
+.ticket-id{
+
+    font-weight:700;
+
+    color:#0d6efd;
+
+}
+
+
+/*==================================
+        SUBJECT
+==================================*/
+
+.ticket-subject{
+
+    text-align:left;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+
+/*==================================
+        LAST UPDATE
+==================================*/
+
+.ticket-update{
+
+    color:#777;
+
+    font-size:13px;
+
+}
+
+
+/*==================================
+        STATUS BADGES
+==================================*/
+
+.ticket-status{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+
+/* Open */
+
+.status-open{
+
+    background:#28a745;
+
+    color:#fff;
+
+}
+
+
+/* Pending */
+
+.status-pending{
+
+    background:#f0ad4e;
+
+    color:#fff;
+
+}
+
+
+/* Answered */
+
+.status-answered{
+
+    background:#17a2b8;
+
+    color:#fff;
+
+}
+
+
+/* Closed */
+
+.status-closed{
+
+    background:#dc3545;
+
+    color:#fff;
+
+}
+
+
+/*==================================
+        EMPTY ROW
+==================================*/
+
+.ticket-empty-row td{
+
+    padding:40px 20px;
+
+}
+
+.ticket-empty-message{
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:15px;
+
+}
+
+
+/*==================================
+        PAGINATION
+==================================*/
+
+.ticket-pagination{
+
+    margin:30px 0 15px;
+
+}
+
+.ticket-pagination>li{
+
+    display:inline-block;
+
+}
+
+.ticket-pagination>li>a,
+
+.ticket-pagination>li>span{
+
+    color:#0d6efd;
+
+    background:#fff;
+
+    border:1px solid #d9e3f2;
+
+    padding:10px 16px;
+
+    margin:0 4px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.ticket-pagination>li>a:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border-color:#0d6efd;
+
+}
+
+.ticket-pagination>.active>a,
+
+.ticket-pagination>.active>a:hover,
+
+.ticket-pagination>.active>span{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border-color:#0d6efd;
+
+}
+
+.ticket-pagination>.disabled>a{
+
+    color:#bbb;
+
+    cursor:not-allowed;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.ticket-history-table{
+
+    min-width:700px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.ticket-history-table{
+
+    min-width:650px;
+
+}
+
+.ticket-history-table tbody td{
+
+    font-size:13px;
+
+    padding:12px 10px;
+
+}
+
+.ticket-status{
+
+    font-size:11px;
+
+    padding:5px 10px;
+
+}
+
+.ticket-pagination>li>a{
+
+    padding:8px 12px;
+
+    margin:2px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.ticket-history-table{
+
+    min-width:600px;
+
+}
+
+.ticket-history-table tbody td{
+
+    font-size:12px;
+
+}
+
+.ticket-empty-message{
+
+    font-size:13px;
+
+}
+
+.ticket-pagination>li>a{
+
+    padding:6px 10px;
+
+    font-size:12px;
+
+}
+
+}
+/*==================================================
+        TICKETS PAGE CSS - PART 4
+        Footer + Animation + Responsive
+==================================================*/
+
+
+/*==================================
+        FOOTER
+==================================*/
+
+.ticket-footer{
+
+    background:#1f2937;
+
+    padding:25px 0;
+
+    margin-top:40px;
+
+}
+
+.ticket-footer-text{
+
+    color:#d1d5db;
+
+    font-size:14px;
+
+    margin:0;
+
+    text-align:center;
+
+}
+
+
+/*==================================
+        FLOATING BUTTONS
+==================================*/
+
+.floating-social{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:9999;
+
+}
+
+.floating-social a{
+
+    display:block;
+
+    width:55px;
+
+    height:55px;
+
+    line-height:55px;
+
+    text-align:center;
+
+    border-radius:50%;
+
+    margin-top:12px;
+
+    color:#fff;
+
+    font-size:22px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+}
+
+.floating-social a:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.telegram-btn{
+
+    background:#0088cc;
+
+}
+
+.whatsapp-btn{
+
+    background:#25d366;
+
+}
+
+
+/*==================================
+        SCROLL TO TOP
+==================================*/
+
+.scroll-top{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:155px;
+
+    width:50px;
+
+    height:50px;
+
+    line-height:50px;
+
+    text-align:center;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(13,110,253,.25);
+
+}
+
+.scroll-top:hover{
+
+    background:#0b5ed7;
+
+}
+
+
+/*==================================
+        FADE ANIMATION
+==================================*/
+
+.ticket-card,
+
+.ticket-table-card{
+
+    animation:ticketFade .6s ease;
+
+}
+
+@keyframes ticketFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================
+        BUTTON EFFECT
+==================================*/
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/*==================================
+        LINKS
+==================================*/
+
+a{
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+
+/*==================================
+        CUSTOM SCROLLBAR
+==================================*/
+
+.table-responsive::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.table-responsive::-webkit-scrollbar-track{
+
+    background:#edf2f7;
+
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+
+    background:#0d6efd;
+
+    border-radius:10px;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Laptop */
+
+@media(max-width:1200px){
+
+.ticket-card,
+
+.ticket-table-card{
+
+    margin-bottom:20px;
+
+}
+
+}
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.ticket-footer{
+
+    text-align:center;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.ticket-footer{
+
+    padding:20px 0;
+
+}
+
+.ticket-footer-text{
+
+    font-size:13px;
+
+}
+
+.floating-social{
+
+    right:15px;
+
+    bottom:15px;
+
+}
+
+.floating-social a{
+
+    width:48px;
+
+    height:48px;
+
+    line-height:48px;
+
+    font-size:20px;
+
+}
+
+.scroll-top{
+
+    width:45px;
+
+    height:45px;
+
+    line-height:45px;
+
+    right:15px;
+
+    bottom:130px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.ticket-footer-text{
+
+    font-size:12px;
+
+}
+
+.floating-social a{
+
+    width:42px;
+
+    height:42px;
+
+    line-height:42px;
+
+    font-size:18px;
+
+}
+
+.scroll-top{
+
+    width:40px;
+
+    height:40px;
+
+    line-height:40px;
+
+    font-size:16px;
+
+}
+
+.ticket-card{
+
+    border-radius:10px;
+
+}
+
+.ticket-table-card{
+
+    border-radius:10px;
+
+}
+
+}

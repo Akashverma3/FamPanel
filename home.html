@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SMM Panel</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default custom-navbar">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#mainNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand logo" href="#">
+                FamSMM
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="active"><a href="home.html">New Order</a></li>
+
+                <li><a href="order_page.html">Order</a></li>
+
+                <li><a href="home.html">Add Funds</a></li>
+
+                <li><a href="service_page.html">Services</a></li>
+
+                <li><a href="ticket_page.html">Ticket</a></li>
+
+                <li><a href="api_page.html">API</a></li>
+
+                <li><a href="transaction_page.html">Transaction</a></li>
+
+            
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+        <!-- ===========================
+                Balance Cards
+        ============================ -->
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="dashboard-card balance-card">
+
+                    <div class="card-icon">
+
+                        <span class="glyphicon glyphicon-credit-card"></span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3 class="balance-amount">
+
+                            ₹ 0.0000
+
+                        </h3>
+
+                        <p class="balance-title">
+
+                            Total Balance
+
+                        </p>
+
+                    </div>
+
+                    <div class="card-action">
+
+                        <a href="addFunds.html"
+                           class="btn btn-danger add-funds-btn">
+
+                            Add Funds
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ===========================
+                Total Spent
+        ============================ -->
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="dashboard-card spent-card">
+
+                    <div class="card-icon">
+
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3 class="balance-amount">
+
+                            ₹ 0.0000
+
+                        </h3>
+
+                        <p class="balance-title">
+
+                            Total Spent
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ===========================
+                Total Orders
+        ============================ -->
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="dashboard-card orders-card">
+
+                    <div class="card-icon">
+
+                        <span class="glyphicon glyphicon-briefcase"></span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3 class="balance-amount">
+
+                            0
+
+                        </h3>
+
+                        <p class="balance-title">
+
+                            Total Orders
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+            DASHBOARD PART 2
+            Service Order Form
+========================================== -->
+
+<section class="order-form-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="order-form-card">
+
+                    <!-- Search Service -->
+
+                    <div class="form-group">
+
+                        <label class="form-label">
+
+                            Search Service
+
+                        </label>
+
+                        <input type="text"
+                               class="form-control search-service-input"
+                               placeholder="Search for a service...">
+
+                    </div>
+
+
+
+                    <!-- Category -->
+
+                    <div class="form-group">
+
+                        <label class="form-label">
+
+                            Category
+
+                        </label>
+
+                        <select class="form-control category-select">
+
+                            <option>
+                                🔥 Limited Offer | Grab Fast
+                            </option>
+
+                            <option>
+                                Instagram Services
+                            </option>
+
+                            <option>
+                                Facebook Services
+                            </option>
+
+                            <option>
+                                YouTube Services
+                            </option>
+
+                            <option>
+                                Telegram Services
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Service -->
+
+                    <div class="form-group">
+
+                        <label class="form-label">
+
+                            Service
+
+                        </label>
+
+                        <select class="form-control service-select">
+
+                            <option>
+
+                                ID 1569 - Instagram Views | Fastest | Always Working
+
+                            </option>
+
+                            <option>
+
+                                Instagram Followers
+
+                            </option>
+
+                            <option>
+
+                                Instagram Likes
+
+                            </option>
+
+                            <option>
+
+                                Instagram Reel Views
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Description -->
+
+                    <div class="form-group">
+
+                        <label class="form-label">
+
+                            Description
+
+                        </label>
+
+                        <textarea
+                            class="form-control service-description"
+                            rows="12"
+                            readonly>
+
+• Start Time - Instant Normally
+
+• Speed - 10M+/Day
+
+• Quality - Real Views
+
+• Drop - 0%
+
+• Refill - 0 Days
+
+
+Link
+
+Instagram Reel URL
+
+
+Notes
+
+• Don't place duplicate orders.
+
+• Wait until current order completes.
+
+• Contact support if any issue occurs.
+
+                        </textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+            DASHBOARD PART 3
+            Order Details Form
+========================================== -->
+
+<section class="order-details-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="order-details-card">
+
+                    <!-- Link -->
+
+                    <div class="form-group">
+
+                        <label class="form-label">
+
+                            Link
+
+                        </label>
+
+                        <input type="url"
+                               class="form-control order-link-input"
+                               placeholder="Paste Instagram / YouTube / Facebook Link">
+
+                    </div>
+
+
+
+                    <!-- Average Time -->
+
+                    <div class="form-group">
+
+                        <label class="form-label">
+
+                            Average Time
+
+                        </label>
+
+                        <input type="text"
+                               class="form-control average-time-input"
+                               value="Refreshing rates..."
+                               readonly>
+
+                    </div>
+
+
+
+                    <!-- Quantity -->
+
+                    <div class="form-group">
+
+                        <label class="form-label">
+
+                            Quantity
+
+                        </label>
+
+                        <input type="number"
+                               class="form-control quantity-input"
+                               placeholder="Enter Quantity">
+
+                        <small class="quantity-note">
+
+                            Min : 100 &nbsp;&nbsp; Max : 2147483647
+
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- Charge -->
+
+                    <div class="form-group">
+
+                        <label class="form-label">
+
+                            Charge
+
+                        </label>
+
+                        <div class="charge-box">
+
+                            <span class="currency-symbol">
+
+                                ₹
+
+                            </span>
+
+                            <input type="text"
+                                   class="form-control charge-input"
+                                   value="0.0000"
+                                   readonly>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Submit Button -->
+
+                    <div class="form-group submit-group">
+
+                        <button type="submit"
+                                class="btn btn-primary submit-order-btn">
+
+                            <span class="glyphicon glyphicon-send"></span>
+
+                            Submit Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+            DASHBOARD PART 4
+            Notice + Footer
+========================================== -->
+
+<section class="dashboard-bottom-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <!-- Telegram Notice -->
+
+                <div class="telegram-notice-card">
+
+                    <p class="telegram-notice-text">
+
+                        Don't miss any offers & updates! Join our Telegram
+                        group for new services, panel updates and important
+                        announcements.
+
+                    </p>
+
+                    <a href="#"
+                       class="btn btn-primary telegram-join-btn">
+
+                        <span class="glyphicon glyphicon-send"></span>
+
+                        Join Telegram
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Support Box -->
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="support-card">
+
+                    <div class="support-icon">
+
+                        <span class="glyphicon glyphicon-comment"></span>
+
+                    </div>
+
+                    <div class="support-content">
+
+                        <h4 class="support-title">
+
+                            Premium Customer Support
+
+                        </h4>
+
+                        <p class="support-description">
+
+                            We provide high quality services with
+                            24/7 customer support through Telegram
+                            and WhatsApp.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Information Box -->
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="information-card">
+
+                    <div class="row">
+
+                        <div class="col-sm-4">
+
+                            <div class="info-item">
+
+                                <span class="glyphicon glyphicon-ok-circle info-icon"></span>
+
+                                <h5>Fast Delivery</h5>
+
+                                <p>Instant Processing</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+
+                            <div class="info-item">
+
+                                <span class="glyphicon glyphicon-lock info-icon"></span>
+
+                                <h5>100% Secure</h5>
+
+                                <p>Safe Payments</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+
+                            <div class="info-item">
+
+                                <span class="glyphicon glyphicon-time info-icon"></span>
+
+                                <h5>24/7 Support</h5>
+
+                                <p>Always Available</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            FLOATING BUTTONS
+========================================== -->
+
+<div class="floating-buttons">
+
+    <a href="#"
+       class="floating-btn telegram-btn">
+
+        <span class="glyphicon glyphicon-send"></span>
+
+    </a>
+
+    <a href="#"
+       class="floating-btn whatsapp-btn">
+
+        <span class="glyphicon glyphicon-earphone"></span>
+
+    </a>
+
+</div>
+
+
+
+<!-- ==========================================
+            FOOTER
+========================================== -->
+
+<footer class="dashboard-footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+
+                <p class="footer-left">
+
+                    © 2026 SMM PANEL.
+                    All Rights Reserved.
+
+                </p>
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 text-right">
+
+                <ul class="footer-menu">
+
+                    <li>
+
+                        <a href="#">
+
+                            Privacy Policy
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Terms
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>

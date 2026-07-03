@@ -1,0 +1,1172 @@
+.custom-navbar{
+    background:#fff;
+    border:none;
+    border-radius:0;
+    margin-bottom:0;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.custom-navbar .navbar-brand.logo{
+    color:#0d6efd;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+    height:70px;
+    line-height:40px;
+}
+
+.custom-navbar .navbar-nav>li>a{
+
+    color:#444;
+    font-size:15px;
+    font-weight:600;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.custom-navbar .navbar-nav>li>a:hover{
+    color:#0d6efd;
+    background:transparent;
+}
+
+.custom-navbar .navbar-nav>.active>a,
+.custom-navbar .navbar-nav>.active>a:hover{
+    background:transparent;
+    color:#0d6efd;
+}
+
+.navbar-toggle{
+    margin-top:18px;
+}
+.custom-navbar{
+    background:#fff;
+    border:none;
+    border-radius:0;
+    margin-bottom:0;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.custom-navbar .navbar-brand.logo{
+    color:#0d6efd;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+    height:70px;
+    line-height:40px;
+}
+
+.custom-navbar .navbar-nav>li>a{
+
+    color:#444;
+    font-size:15px;
+    font-weight:600;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.custom-navbar .navbar-nav>li>a:hover{
+    color:#0d6efd;
+    background:transparent;
+}
+
+.custom-navbar .navbar-nav>.active>a,
+.custom-navbar .navbar-nav>.active>a:hover{
+    background:transparent;
+    color:#0d6efd;
+}
+
+.navbar-toggle{
+    margin-top:18px;
+}
+/*==================================================
+        TRANSACTIONS CSS - PART 1
+        Layout + Card + Table
+==================================================*/
+
+
+/*==================================
+        PAGE
+==================================*/
+
+.transactions-section{
+
+    background:#f5f7fb;
+
+    padding:30px 0;
+
+    min-height:100vh;
+
+}
+
+
+/*==================================
+        MAIN CARD
+==================================*/
+
+.transactions-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================
+        TABLE
+==================================*/
+
+.transactions-table{
+
+    margin-bottom:0;
+
+    min-width:850px;
+
+}
+
+.transactions-table thead{
+
+    background:#0d6efd;
+
+}
+
+.transactions-table thead th{
+
+    color:#ffffff;
+
+    border:none;
+
+    padding:16px 15px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    vertical-align:middle;
+
+}
+
+
+/*==================================
+        TABLE BODY
+==================================*/
+
+.transactions-table tbody td{
+
+    padding:15px;
+
+    text-align:center;
+
+    vertical-align:middle;
+
+    border-top:1px solid #eef2f7;
+
+    font-size:14px;
+
+    color:#444;
+
+}
+
+
+/*==================================
+        COLUMN WIDTH
+==================================*/
+
+.transaction-id{
+
+    width:110px;
+
+}
+
+.transaction-type{
+
+    width:180px;
+
+}
+
+.transaction-amount{
+
+    width:140px;
+
+}
+
+.transaction-date{
+
+    width:170px;
+
+}
+
+.transaction-details{
+
+    min-width:300px;
+
+    text-align:left;
+
+}
+
+
+/*==================================
+        DETAILS COLUMN
+==================================*/
+
+.transactions-table tbody td:last-child{
+
+    text-align:left;
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+
+/*==================================
+        RESPONSIVE TABLE
+==================================*/
+
+.table-responsive{
+
+    border:none;
+
+    overflow-x:auto;
+
+}
+
+
+/*==================================
+        TABLE SCROLLBAR
+==================================*/
+
+.table-responsive::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.table-responsive::-webkit-scrollbar-track{
+
+    background:#edf2f7;
+
+    border-radius:10px;
+
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+
+    background:#0d6efd;
+
+    border-radius:10px;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+/* Laptop */
+
+@media(max-width:1200px){
+
+.transactions-table{
+
+    min-width:820px;
+
+}
+
+}
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.transactions-card{
+
+    padding:20px;
+
+}
+
+.transactions-table{
+
+    min-width:780px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.transactions-section{
+
+    padding:15px 0;
+
+}
+
+.transactions-card{
+
+    padding:15px;
+
+    border-radius:12px;
+
+}
+
+.transactions-table{
+
+    min-width:720px;
+
+}
+
+.transactions-table thead th{
+
+    font-size:13px;
+
+    padding:12px;
+
+}
+
+.transactions-table tbody td{
+
+    font-size:13px;
+
+    padding:12px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.transactions-card{
+
+    padding:12px;
+
+}
+
+.transactions-table{
+
+    min-width:680px;
+
+}
+
+.transactions-table thead th{
+
+    font-size:12px;
+
+}
+
+.transactions-table tbody td{
+
+    font-size:12px;
+
+}
+
+}
+/*==================================================
+        TRANSACTIONS CSS - PART 2
+        Badges + Amount + Hover
+==================================================*/
+
+
+/*==================================
+        TRANSACTION ROW
+==================================*/
+
+.transaction-row{
+
+    transition:.3s ease;
+
+}
+
+.transaction-row:hover{
+
+    background:#f8fbff;
+
+}
+
+
+/*==================================
+        TRANSACTION BADGE
+==================================*/
+
+.transaction-badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    text-align:center;
+
+    min-width:120px;
+
+}
+
+
+/*==================================
+        CREDIT BADGE
+==================================*/
+
+.badge-credit{
+
+    background:#d4edda;
+
+    color:#155724;
+
+}
+
+
+/*==================================
+        DEBIT BADGE
+==================================*/
+
+.badge-debit{
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+}
+
+
+/*==================================
+        CREDIT AMOUNT
+==================================*/
+
+.amount-credit{
+
+    color:#28a745;
+
+    font-weight:700;
+
+    font-size:15px;
+
+}
+
+
+/*==================================
+        DEBIT AMOUNT
+==================================*/
+
+.amount-debit{
+
+    color:#dc3545;
+
+    font-weight:700;
+
+    font-size:15px;
+
+}
+
+
+/*==================================
+        TRANSACTION ID
+==================================*/
+
+.transactions-table tbody td:first-child{
+
+    font-weight:600;
+
+    color:#0d6efd;
+
+}
+
+
+/*==================================
+        DETAILS COLUMN
+==================================*/
+
+.transactions-table tbody td:last-child{
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+
+/*==================================
+        EMPTY STATE
+==================================*/
+
+.transaction-empty-row td{
+
+    padding:40px 20px;
+
+    text-align:center;
+
+}
+
+.transaction-empty{
+
+    color:#999;
+
+    font-size:15px;
+
+    font-style:italic;
+
+}
+
+
+/*==================================
+        TABLE BORDER
+==================================*/
+
+.transactions-table tbody tr:last-child td{
+
+    border-bottom:1px solid #eef2f7;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.transaction-badge{
+
+    min-width:100px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.transaction-badge{
+
+    min-width:90px;
+
+    padding:5px 10px;
+
+    font-size:11px;
+
+}
+
+.amount-credit,
+
+.amount-debit{
+
+    font-size:14px;
+
+}
+
+.transaction-empty{
+
+    font-size:14px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.transaction-badge{
+
+    min-width:80px;
+
+    padding:4px 8px;
+
+    font-size:10px;
+
+}
+
+.amount-credit,
+
+.amount-debit{
+
+    font-size:13px;
+
+}
+
+.transaction-empty{
+
+    font-size:13px;
+
+}
+
+}
+/*==================================================
+        TRANSACTIONS CSS - PART 3
+        Pagination + Footer
+==================================================*/
+
+
+/*==================================
+        PAGINATION
+==================================*/
+
+.transactions-pagination{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.transactions-pagination .pagination{
+
+    margin:0;
+
+}
+
+.transactions-pagination .pagination>li{
+
+    display:inline-block;
+
+}
+
+.transactions-pagination .pagination>li>a,
+
+.transactions-pagination .pagination>li>span{
+
+    padding:10px 16px;
+
+    margin:0 4px;
+
+    border-radius:8px;
+
+    border:1px solid #d9e3f2;
+
+    background:#ffffff;
+
+    color:#0d6efd;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.transactions-pagination .pagination>li>a:hover{
+
+    background:#0d6efd;
+
+    color:#ffffff;
+
+    border-color:#0d6efd;
+
+}
+
+.transactions-pagination .pagination>.active>a,
+
+.transactions-pagination .pagination>.active>span,
+
+.transactions-pagination .pagination>.active>a:hover{
+
+    background:#0d6efd;
+
+    color:#ffffff;
+
+    border-color:#0d6efd;
+
+}
+
+.transactions-pagination .pagination>.disabled>a,
+
+.transactions-pagination .pagination>.disabled>span{
+
+    color:#999;
+
+    cursor:not-allowed;
+
+    background:#f8f9fa;
+
+}
+
+
+/*==================================
+        FOOTER
+==================================*/
+
+.transactions-footer{
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eef2f7;
+
+}
+
+.transaction-count{
+
+    margin:0;
+
+    font-size:14px;
+
+    color:#555;
+
+}
+
+.transaction-count strong{
+
+    color:#0d6efd;
+
+    font-weight:700;
+
+}
+
+.transaction-last-update{
+
+    margin:0;
+
+    font-size:14px;
+
+    color:#555;
+
+}
+
+.transaction-last-update span{
+
+    color:#222;
+
+    font-weight:600;
+
+}
+
+
+/*==================================
+        FOOTER HOVER
+==================================*/
+
+.transactions-footer p{
+
+    transition:.3s;
+
+}
+
+.transactions-footer p:hover{
+
+    color:#0d6efd;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.transactions-footer{
+
+    text-align:center;
+
+}
+
+.transaction-count{
+
+    margin-bottom:10px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.transactions-pagination .pagination>li>a{
+
+    padding:8px 12px;
+
+    margin:2px;
+
+    font-size:13px;
+
+}
+
+.transaction-count,
+
+.transaction-last-update{
+
+    text-align:center;
+
+    font-size:13px;
+
+}
+
+.transaction-last-update{
+
+    margin-top:10px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.transactions-pagination .pagination>li>a{
+
+    padding:6px 10px;
+
+    font-size:12px;
+
+}
+
+.transaction-count,
+
+.transaction-last-update{
+
+    font-size:12px;
+
+}
+
+.transactions-footer{
+
+    margin-top:20px;
+
+}
+
+}
+/*==================================================
+        TRANSACTIONS CSS - PART 4
+        Final Responsive + Animation
+==================================================*/
+
+
+/*==================================
+        SMOOTH SCROLL
+==================================*/
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/*==================================
+        SELECTION
+==================================*/
+
+::selection{
+
+    background:#0d6efd;
+
+    color:#ffffff;
+
+}
+
+
+/*==================================
+        CARD ANIMATION
+==================================*/
+
+.transactions-card{
+
+    animation:transactionFade .6s ease;
+
+}
+
+@keyframes transactionFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================
+        TABLE ANIMATION
+==================================*/
+
+.transactions-table tbody tr{
+
+    animation:rowFade .4s ease;
+
+}
+
+@keyframes rowFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================
+        CUSTOM SCROLLBAR
+==================================*/
+
+body::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+body::-webkit-scrollbar-track{
+
+    background:#eef2f7;
+
+}
+
+body::-webkit-scrollbar-thumb{
+
+    background:#0d6efd;
+
+    border-radius:20px;
+
+}
+
+body::-webkit-scrollbar-thumb:hover{
+
+    background:#0b5ed7;
+
+}
+
+
+/*==================================
+        TABLE SHADOW
+==================================*/
+
+.transactions-table{
+
+    border-collapse:collapse;
+
+}
+
+.transactions-table tbody tr{
+
+    transition:.3s ease;
+
+}
+
+.transactions-table tbody tr:hover{
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+}
+
+
+/*==================================
+        PRINT STYLE
+==================================*/
+
+@media print{
+
+.transactions-section{
+
+    background:#ffffff;
+
+    padding:0;
+
+}
+
+.transactions-card{
+
+    box-shadow:none;
+
+    border:1px solid #cccccc;
+
+}
+
+.transactions-pagination,
+
+.transactions-footer{
+
+    display:none;
+
+}
+
+}
+
+
+/*==================================
+        LARGE DESKTOP
+==================================*/
+
+@media(min-width:1200px){
+
+.transactions-card{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+}
+
+
+/*==================================
+        TABLET
+==================================*/
+
+@media(max-width:991px){
+
+.transactions-table{
+
+    min-width:750px;
+
+}
+
+}
+
+
+/*==================================
+        MOBILE
+==================================*/
+
+@media(max-width:767px){
+
+.transactions-card{
+
+    border-radius:12px;
+
+}
+
+.transactions-table{
+
+    min-width:700px;
+
+}
+
+.transactions-table thead th{
+
+    white-space:nowrap;
+
+}
+
+}
+
+
+/*==================================
+        SMALL MOBILE
+==================================*/
+
+@media(max-width:480px){
+
+.transactions-card{
+
+    padding:12px;
+
+}
+
+.transactions-table{
+
+    min-width:650px;
+
+}
+
+.transactions-table td,
+
+.transactions-table th{
+
+    white-space:nowrap;
+
+}
+
+}
+
+
+/*==================================
+        FINAL OPTIMIZATION
+==================================*/
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+table{
+
+    width:100%;
+
+}
+
+a{
+
+    transition:.3s ease;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+button{
+
+    transition:.3s ease;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}

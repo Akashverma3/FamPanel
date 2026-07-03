@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SMM Panel</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="ticket_page.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default custom-navbar">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#mainNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand logo" href="#">
+                FamSMM
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+<li class="active"><a href="home.html">New Order</a></li>
+
+                <li><a href="order_page.html">Order</a></li>
+
+                <li><a href="home.html">Add Funds</a></li>
+
+                <li><a href="service_page.html">Services</a></li>
+
+                <li><a href="ticket_page.html">Ticket</a></li>
+
+                <li><a href="api_page.html">API</a></li>
+
+                <li><a href="transaction_page.html">Transaction</a></li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+<!-- ==========================================
+        TRANSACTIONS PAGE - PART 1
+=========================================== -->
+
+<section class="transactions-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="transactions-card">
+
+                    <!-- Transactions Table -->
+
+                    <div class="table-responsive">
+
+                        <table class="table transactions-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th class="transaction-id">
+
+                                        ID
+
+                                    </th>
+
+                                    <th class="transaction-type">
+
+                                        Type
+
+                                    </th>
+
+                                    <th class="transaction-amount">
+
+                                        $ Amount
+
+                                    </th>
+
+                                    <th class="transaction-date">
+
+                                        Date
+
+                                    </th>
+
+                                    <th class="transaction-details">
+
+                                        Details
+
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <!-- Transaction Row 1 -->
+
+                                <tr class="transaction-row">
+
+                                    <td>
+
+                                        #125874
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="transaction-badge badge-credit">
+
+                                            Add Funds
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="amount-credit">
+
+                                        +$50.00
+
+                                    </td>
+
+                                    <td>
+
+                                        03 Jul 2026
+
+                                    </td>
+
+                                    <td>
+
+                                        Payment received successfully.
+
+                                    </td>
+
+                                </tr>
+
+                                <!-- Transaction Row 2 -->
+                                                                 <tr class="transaction-row">
+
+                                    <td>
+
+                                        #125873
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="transaction-badge badge-debit">
+
+                                            New Order
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="amount-debit">
+
+                                        -$12.50
+
+                                    </td>
+
+                                    <td>
+
+                                        02 Jul 2026
+
+                                    </td>
+
+                                    <td>
+
+                                        Instagram Followers Order (#45896)
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr class="transaction-row">
+
+                                    <td>
+
+                                        #125872
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="transaction-badge badge-credit">
+
+                                            Refund
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="amount-credit">
+
+                                        +$3.00
+
+                                    </td>
+
+                                    <td>
+
+                                        02 Jul 2026
+
+                                    </td>
+
+                                    <td>
+
+                                        Order Cancelled Refund
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr class="transaction-row">
+
+                                    <td>
+
+                                        #125871
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="transaction-badge badge-debit">
+
+                                            Service Purchase
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="amount-debit">
+
+                                        -$5.25
+
+                                    </td>
+
+                                    <td>
+
+                                        01 Jul 2026
+
+                                    </td>
+
+                                    <td>
+
+                                        YouTube Views Order
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr class="transaction-row">
+
+                                    <td>
+
+                                        #125870
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="transaction-badge badge-credit">
+
+                                            Bonus
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="amount-credit">
+
+                                        +$1.50
+
+                                    </td>
+
+                                    <td>
+
+                                        30 Jun 2026
+
+                                    </td>
+
+                                    <td>
+
+                                        Promotional Bonus Added
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr class="transaction-row">
+
+                                    <td>
+
+                                        #125869
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="transaction-badge badge-debit">
+
+                                            API Order
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="amount-debit">
+
+                                        -$18.90
+
+                                    </td>
+
+                                    <td>
+
+                                        30 Jun 2026
+
+                                    </td>
+
+                                    <td>
+
+                                        API Bulk Order
+
+                                    </td>
+
+                                </tr>
+                                                                <tr class="transaction-empty-row">
+
+                                    <td colspan="5" class="transaction-empty">
+
+                                        No transactions found.
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    <!-- /.table-responsive -->
+
+
+
+                    <!-- Pagination -->
+
+                    <div class="transactions-pagination">
+
+                        <ul class="pagination">
+
+                            <li class="page-item">
+
+                                <a href="#" class="page-link">
+
+                                    &laquo;
+
+                                </a>
+
+                            </li>
+
+                            <li class="page-item active">
+
+                                <a href="#" class="page-link">
+
+                                    1
+
+                                </a>
+
+                            </li>
+
+                            <li class="page-item">
+
+                                <a href="#" class="page-link">
+
+                                    2
+
+                                </a>
+
+                            </li>
+
+                            <li class="page-item">
+
+                                <a href="#" class="page-link">
+
+                                    3
+
+                                </a>
+
+                            </li>
+
+                            <li class="page-item">
+
+                                <a href="#" class="page-link">
+
+                                    &raquo;
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- /.transactions-pagination -->
+
+
+                </div>
+                <!-- /.transactions-card -->
+                                 <!-- Transactions Footer -->
+
+                <div class="transactions-footer">
+
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6">
+
+                            <p class="transaction-count">
+
+                                Showing
+
+                                <strong>1 - 5</strong>
+
+                                of
+
+                                <strong>25</strong>
+
+                                Transactions
+
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 text-right">
+
+                            <p class="transaction-last-update">
+
+                                Last Updated :
+
+                                <span>
+
+                                    03 Jul 2026 06:00 AM
+
+                                </span>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.col-md-12 -->
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+<!--=========================================
+        END TRANSACTIONS PAGE
+==========================================-->

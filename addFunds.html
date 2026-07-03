@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SMM Panel</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="addFunds.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default custom-navbar">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#mainNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand logo" href="#">
+                FamSMM
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+
+               
+                <li class="active"><a href="home.html">New Order</a></li>
+
+                <li><a href="order_page.html">Order</a></li>
+
+                <li><a href="home.html">Add Funds</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="ticket_page.html">Ticket</a></li>
+
+                <li><a href="api_page.html">API</a></li>
+
+                <li><a href="transaction_page.html">Transaction</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section class="add-funds-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="add-funds-card">
+
+                    <!-- Page Heading -->
+
+                    <div class="page-header-box">
+
+                        <h3 class="page-title">
+
+                            Add Funds
+
+                        </h3>
+
+                        <p class="page-subtitle">
+
+                            Deposit money securely using your preferred payment method.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- Payment Method -->
+
+                    <div class="form-group">
+
+                        <label class="payment-label">
+
+                            Payment Method
+
+                        </label>
+
+                        <select class="form-control payment-method-select">
+
+                            <option selected>
+
+                                PhonePe Only ( +2% Bonus )
+
+                            </option>
+
+                            <option>
+
+                                Paytm UPI
+
+                            </option>
+
+                            <option>
+
+                                Google Pay
+
+                            </option>
+
+                            <option>
+
+                                BHIM UPI
+
+                            </option>
+
+                            <option>
+
+                                Bank Transfer
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+        ADD FUNDS PAGE - PART 2
+        QR Code & Instructions
+========================================== -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="payment-details-card">
+
+            <!-- QR Code Section -->
+
+            <div class="qr-code-section">
+
+                <div class="qr-image-box">
+
+                    <!-- Replace with your own QR -->
+
+                    <img src="Qr.jpeg"
+                         alt="UPI QR Code"
+                         class="img-responsive center-block qr-image">
+
+                </div>
+
+            </div>
+
+
+            <!-- Instructions -->
+
+            <div class="payment-instruction-box">
+
+                <h3 class="instruction-title">
+
+                    Only For PhonePe Don't Use Any Other App
+
+                </h3>
+
+                <div class="instruction-content">
+
+                    <p>
+
+                        <strong>Step 1 :</strong>
+                        Scan the QR Code.
+
+                    </p>
+
+                    <p>
+
+                        <strong>Step 2 :</strong>
+                        Enter the Amount.
+
+                    </p>
+
+                    <p>
+
+                        <strong>Step 3 :</strong>
+                        Complete the Payment Successfully.
+
+                    </p>
+
+                    <p>
+
+                        <strong>Step 4 :</strong>
+                        Enter Transaction ID and Amount below.
+
+                    </p>
+
+                    <p>
+
+                        <strong>Step 5 :</strong>
+                        Click on <strong>Pay</strong> button.
+
+                    </p>
+
+                </div>
+                 <div class="payment_guide">
+
+                    <!-- Replace with your own QR -->
+
+                    <img src="payment_guide.png"
+                         alt="UPI QR Code"
+                         class="img-responsive center-block qr-image">
+
+                </div>
+
+            </div>
+
+
+            <!-- Information -->
+
+            <div class="payment-info-box">
+
+                <h4 class="info-heading">
+
+                    Display Name
+
+                </h4>
+
+                <p class="display-name">
+
+                    Mr Verma Payment
+
+                </p>
+
+                <hr>
+
+                <h4 class="info-heading">
+
+                    Important Notice
+
+                </h4>
+
+                <ul class="payment-note-list">
+
+                    <li>
+
+                        Don't use old Transaction IDs.
+
+                    </li>
+
+                    <li>
+
+                        Upload only successful payment details.
+
+                    </li>
+
+                    <li>
+
+                        Wrong Transaction ID may lead to rejection.
+
+                    </li>
+
+                    <li>
+
+                        If payment is not credited,
+                        contact Support with Screenshot.
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ==========================================
+        ADD FUNDS PAGE - PART 3
+        Payment Form
+========================================== -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="payment-form-card">
+
+            <!-- Transaction ID -->
+
+            <div class="form-group">
+
+                <label class="payment-label">
+
+                    Transaction ID
+
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control transaction-id-input"
+                    placeholder="Enter UPI Transaction ID">
+
+            </div>
+
+
+            <!-- Amount -->
+
+            <div class="form-group">
+
+                <label class="payment-label">
+
+                    Amount (INR)
+
+                </label>
+
+                <input
+                    type="number"
+                    class="form-control amount-input"
+                    placeholder="Enter Payment Amount">
+
+            </div>
+
+
+            <!-- Screenshot Upload -->
+
+            <div class="form-group">
+
+                <label class="payment-label">
+
+                    Payment Screenshot
+
+                </label>
+
+                <input
+                    type="file"
+                    class="form-control payment-screenshot-input"
+                    accept="image/*">
+
+                <p class="upload-note">
+
+                    Upload payment screenshot for faster verification.
+
+                </p>
+
+            </div>
+
+
+            <!-- Terms -->
+
+            <div class="form-group">
+
+                <label class="payment-checkbox">
+
+                    <input
+                        type="checkbox"
+                        class="payment-terms-checkbox">
+
+                    I confirm that I have made the payment and all
+                    information entered above is correct.
+
+                </label>
+
+            </div>
+
+
+            <!-- Pay Button -->
+
+            <div class="form-group">
+
+                <button
+                    type="submit"
+                    class="btn btn-success payment-submit-btn">
+
+                    <span class="glyphicon glyphicon-ok-circle"></span>
+
+                    Submit Payment
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ==========================================
+        ADD FUNDS PAGE - PART 4
+        Payment History + Footer
+========================================== -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="payment-history-card">
+
+            <!-- Card Header -->
+
+            <div class="history-header">
+
+                <h3 class="history-title">
+
+                    Payment History
+
+                </h3>
+
+                <p class="history-subtitle">
+
+                    View all your submitted payment requests.
+
+                </p>
+
+            </div>
+
+
+            <!-- Responsive Table -->
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-hover payment-history-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>#</th>
+
+                            <th>Date</th>
+
+                            <th>Transaction ID</th>
+
+                            <th>Method</th>
+
+                            <th>Amount</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <!-- Example Row -->
+
+                        <tr>
+
+                            <td>1</td>
+
+                            <td>12-07-2026</td>
+
+                            <td>TXN987654321</td>
+
+                            <td>PhonePe</td>
+
+                            <td>₹500</td>
+
+                            <td>
+
+                                <span class="status-badge status-pending">
+
+                                    Pending
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- Empty State -->
+
+                        <!--
+                        <tr>
+
+                            <td colspan="6" class="empty-history">
+
+                                No Payment History Found
+
+                            </td>
+
+                        </tr>
+                        -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- Pagination -->
+
+            <div class="history-pagination text-center">
+
+                <ul class="pagination">
+
+                    <li class="disabled">
+
+                        <a href="#">
+
+                            &laquo;
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="#">
+
+                            1
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            2
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            3
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            &raquo;
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+                HELP CARD
+========================================== -->
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="help-card">
+
+            <span class="glyphicon glyphicon-info-sign help-icon"></span>
+
+            <h4 class="help-title">
+
+                Need Help?
+
+            </h4>
+
+            <p class="help-text">
+
+                If your payment is not added within the expected time,
+                please contact our support team with your
+                Transaction ID and Payment Screenshot.
+
+            </p>
+
+            <a href="#"
+
+               class="btn btn-primary support-btn">
+
+                Contact Support
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+                FOOTER
+========================================== -->
+
+<footer class="add-funds-footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-6">
+
+                <p class="footer-copy">
+
+                    © 2026 SMM PANEL. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+            <div class="col-sm-6 text-right">
+
+                <ul class="footer-links">
+
+                    <li>
+
+                        <a href="#">
+
+                            Privacy Policy
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Terms & Conditions
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>

@@ -1,0 +1,1437 @@
+
+
+.order-history-section{
+
+    padding:30px 0;
+
+    background:#f5f7fb;
+
+    min-height:100vh;
+
+}
+
+.custom-navbar{
+    background:#fff;
+    border:none;
+    border-radius:0;
+    margin-bottom:0;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.custom-navbar .navbar-brand.logo{
+    color:#0d6efd;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+    height:70px;
+    line-height:40px;
+}
+
+.custom-navbar .navbar-nav>li>a{
+
+    color:#444;
+    font-size:15px;
+    font-weight:600;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.custom-navbar .navbar-nav>li>a:hover{
+    color:#0d6efd;
+    background:transparent;
+}
+
+.custom-navbar .navbar-nav>.active>a,
+.custom-navbar .navbar-nav>.active>a:hover{
+    background:transparent;
+    color:#0d6efd;
+}
+
+.navbar-toggle{
+    margin-top:18px;
+}
+
+/*==================================
+        MAIN CARD
+==================================*/
+
+.order-history-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+.order-history-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+
+/*==================================
+        PAGE HEADER
+==================================*/
+
+.order-page-header{
+
+    margin-bottom:30px;
+
+}
+
+.order-page-title{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+.order-page-subtitle{
+
+    margin-top:8px;
+
+    color:#777;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+
+/*==================================
+        STATUS FILTER
+==================================*/
+
+.order-filter-wrapper{
+
+    margin-bottom:25px;
+
+}
+
+.order-status-tabs{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.order-status-tabs>li{
+
+    float:none;
+
+    display:inline-block;
+
+}
+
+.order-status-tabs>li>a{
+
+    border-radius:30px;
+
+    padding:10px 22px;
+
+    border:1px solid #dfe6ee;
+
+    background:#fff;
+
+    color:#555;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.order-status-tabs>li>a:hover{
+
+    background:#0d6efd;
+
+    border-color:#0d6efd;
+
+    color:#fff;
+
+}
+
+.order-status-tabs>.active>a,
+
+.order-status-tabs>.active>a:hover,
+
+.order-status-tabs>.active>a:focus{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border-color:#0d6efd;
+
+}
+
+
+/*==================================
+        SEARCH BOX
+==================================*/
+
+.order-search-row{
+
+    margin-top:25px;
+
+}
+
+.order-search-box{
+
+    width:100%;
+
+}
+
+.order-search-input{
+
+    height:48px;
+
+    border:1px solid #dfe6ee;
+
+    border-right:none;
+
+    border-radius:8px 0 0 8px;
+
+    box-shadow:none;
+
+    font-size:14px;
+
+}
+
+.order-search-input:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:none;
+
+}
+
+.order-search-btn{
+
+    height:48px;
+
+    padding:0 20px;
+
+    border-radius:0 8px 8px 0;
+
+    border:1px solid #0d6efd;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.order-search-btn:hover{
+
+    background:#0b5ed7;
+
+    border-color:#0b5ed7;
+
+    color:#fff;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.order-history-card{
+
+    padding:25px;
+
+}
+
+.order-page-title{
+
+    font-size:26px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.order-history-section{
+
+    padding:15px 0;
+
+}
+
+.order-history-card{
+
+    padding:20px;
+
+    border-radius:12px;
+
+}
+
+.order-page-title{
+
+    font-size:22px;
+
+}
+
+.order-page-subtitle{
+
+    font-size:14px;
+
+}
+
+.order-status-tabs{
+
+    display:block;
+
+}
+
+.order-status-tabs>li{
+
+    display:block;
+
+    width:100%;
+
+    margin-bottom:10px;
+
+}
+
+.order-status-tabs>li>a{
+
+    display:block;
+
+    text-align:center;
+
+}
+
+.order-search-row{
+
+    margin-top:20px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.order-history-card{
+
+    padding:15px;
+
+}
+
+.order-page-title{
+
+    font-size:20px;
+
+}
+
+.order-search-input,
+
+.order-search-btn{
+
+    height:42px;
+
+}
+
+}
+/*==================================================
+        ORDER HISTORY CSS - PART 2
+        Orders Table
+==================================================*/
+
+
+/*==================================
+        TABLE CARD
+==================================*/
+
+.orders-table-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================
+        TABLE
+==================================*/
+
+.orders-history-table{
+
+    margin-bottom:0;
+
+    border-collapse:collapse;
+
+    min-width:1000px;
+
+}
+
+.orders-history-table thead{
+
+    background:#0d6efd;
+
+}
+
+.orders-history-table thead th{
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    text-align:center;
+
+    padding:15px 12px;
+
+    border:none;
+
+    white-space:nowrap;
+
+}
+
+
+/*==================================
+        TABLE BODY
+==================================*/
+
+.orders-history-table tbody td{
+
+    padding:15px 12px;
+
+    text-align:center;
+
+    vertical-align:middle;
+
+    border-top:1px solid #eef2f7;
+
+    color:#444;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.orders-history-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.orders-history-table tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+
+/*==================================
+        ORDER LINK
+==================================*/
+
+.order-link{
+
+    color:#0d6efd;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    word-break:break-all;
+
+}
+
+.order-link:hover{
+
+    color:#0b5ed7;
+
+    text-decoration:none;
+
+}
+
+
+/*==================================
+        STATUS BADGE
+==================================*/
+
+.status-badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#fff;
+
+}
+
+
+/* Pending */
+
+.status-pending{
+
+    background:#f0ad4e;
+
+}
+
+
+/* In Progress */
+
+.status-progress{
+
+    background:#17a2b8;
+
+}
+
+
+/* Completed */
+
+.status-completed{
+
+    background:#28a745;
+
+}
+
+
+/* Partial */
+
+.status-partial{
+
+    background:#6f42c1;
+
+}
+
+
+/* Cancelled */
+
+.status-cancelled{
+
+    background:#dc3545;
+
+}
+
+
+/*==================================
+        EMPTY TABLE
+==================================*/
+
+.empty-orders{
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    color:#999;
+
+    font-size:16px;
+
+}
+
+.empty-orders .glyphicon{
+
+    font-size:40px;
+
+    color:#d0d7df;
+
+}
+
+
+/*==================================
+        RESPONSIVE TABLE
+==================================*/
+
+.table-responsive{
+
+    border:none;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.orders-table-card{
+
+    padding:20px;
+
+}
+
+.orders-history-table{
+
+    min-width:900px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.orders-table-card{
+
+    padding:15px;
+
+    border-radius:12px;
+
+}
+
+.orders-history-table thead th{
+
+    font-size:13px;
+
+    padding:12px 10px;
+
+}
+
+.orders-history-table tbody td{
+
+    font-size:13px;
+
+    padding:12px 10px;
+
+}
+
+.status-badge{
+
+    font-size:11px;
+
+    padding:5px 10px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.orders-table-card{
+
+    padding:12px;
+
+}
+
+.orders-history-table{
+
+    min-width:850px;
+
+}
+
+.orders-history-table thead th,
+
+.orders-history-table tbody td{
+
+    font-size:12px;
+
+}
+
+.status-badge{
+
+    padding:4px 8px;
+
+    font-size:10px;
+
+}
+
+}
+/*==================================================
+        ORDER HISTORY CSS - PART 3
+        Pagination + Summary Cards + Help Card
+==================================================*/
+
+
+/*==================================
+        PAGINATION
+==================================*/
+
+.order-pagination-wrapper{
+
+    margin:25px 0 35px;
+
+    text-align:center;
+
+}
+
+.order-pagination{
+
+    margin:0;
+
+}
+
+.order-pagination>li{
+
+    display:inline-block;
+
+}
+
+.order-pagination>li>a,
+
+.order-pagination>li>span{
+
+    color:#0d6efd;
+
+    border:1px solid #dfe6ee;
+
+    padding:10px 16px;
+
+    margin:0 4px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.order-pagination>li>a:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border-color:#0d6efd;
+
+}
+
+.order-pagination>.active>a,
+
+.order-pagination>.active>a:hover,
+
+.order-pagination>.active>span{
+
+    background:#0d6efd;
+
+    border-color:#0d6efd;
+
+    color:#fff;
+
+}
+
+.order-pagination>.disabled>a{
+
+    color:#bbb;
+
+    cursor:not-allowed;
+
+}
+
+
+/*==================================
+        SUMMARY CARD
+==================================*/
+
+.summary-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.summary-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+.summary-icon{
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
+}
+
+.summary-title{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#555;
+
+    margin-bottom:10px;
+
+}
+
+.summary-count{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin:0;
+
+}
+
+
+/* Card Colors */
+
+.summary-total .summary-icon{
+
+    color:#0d6efd;
+
+}
+
+.summary-completed .summary-icon{
+
+    color:#28a745;
+
+}
+
+.summary-pending .summary-icon{
+
+    color:#f0ad4e;
+
+}
+
+.summary-total{
+
+    border-top:4px solid #0d6efd;
+
+}
+
+.summary-completed{
+
+    border-top:4px solid #28a745;
+
+}
+
+.summary-pending{
+
+    border-top:4px solid #f0ad4e;
+
+}
+
+
+/*==================================
+        HELP CARD
+==================================*/
+
+.orders-help-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    text-align:center;
+
+    margin-top:10px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.help-card-icon{
+
+    font-size:45px;
+
+    color:#0d6efd;
+
+    margin-bottom:15px;
+
+}
+
+.help-card-title{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.help-card-text{
+
+    font-size:15px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    max-width:700px;
+
+    margin:0 auto 25px;
+
+}
+
+.contact-support-btn{
+
+    padding:12px 35px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.summary-card{
+
+    padding:25px;
+
+}
+
+.orders-help-card{
+
+    padding:30px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.order-pagination>li>a{
+
+    padding:8px 12px;
+
+    margin:2px;
+
+}
+
+.summary-card{
+
+    padding:20px;
+
+}
+
+.summary-icon{
+
+    font-size:32px;
+
+}
+
+.summary-title{
+
+    font-size:16px;
+
+}
+
+.summary-count{
+
+    font-size:28px;
+
+}
+
+.orders-help-card{
+
+    padding:20px;
+
+    border-radius:12px;
+
+}
+
+.help-card-title{
+
+    font-size:22px;
+
+}
+
+.help-card-text{
+
+    font-size:14px;
+
+}
+
+.contact-support-btn{
+
+    width:100%;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.summary-card{
+
+    padding:18px;
+
+}
+
+.summary-count{
+
+    font-size:24px;
+
+}
+
+.help-card-title{
+
+    font-size:20px;
+
+}
+
+.help-card-icon{
+
+    font-size:38px;
+
+}
+
+}
+/*==================================================
+        ORDER HISTORY CSS - PART 4
+        Footer + Floating Buttons + Empty State
+==================================================*/
+
+
+/*==================================
+        FLOATING BUTTONS
+==================================*/
+
+.floating-social-buttons{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:999;
+
+}
+
+.floating-btn{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    margin-top:15px;
+
+    text-decoration:none;
+
+    background:#ffffff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.floating-btn:hover{
+
+    transform:translateY(-4px) scale(1.05);
+
+    text-decoration:none;
+
+}
+
+.telegram-btn{
+
+    background:#0088cc;
+
+}
+
+.whatsapp-btn{
+
+    background:#25d366;
+
+}
+
+.floating-icon{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+
+/*==================================
+        EMPTY STATE
+==================================*/
+
+.no-order-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:45px 30px;
+
+    text-align:center;
+
+    margin:30px 0;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.no-order-icon{
+
+    font-size:60px;
+
+    color:#d6dbe3;
+
+    margin-bottom:20px;
+
+}
+
+.no-order-title{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#333;
+
+    margin-bottom:15px;
+
+}
+
+.no-order-text{
+
+    max-width:600px;
+
+    margin:0 auto 25px;
+
+    color:#777;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+.new-order-btn{
+
+    padding:12px 35px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+/*==================================
+        FOOTER
+==================================*/
+
+.orders-footer{
+
+    background:#1f2937;
+
+    padding:25px 0;
+
+    margin-top:40px;
+
+}
+
+.footer-text{
+
+    color:#d1d5db;
+
+    margin:0;
+
+    font-size:14px;
+
+}
+
+.footer-menu{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.footer-menu li{
+
+    display:inline-block;
+
+    margin-left:20px;
+
+}
+
+.footer-menu li a{
+
+    color:#d1d5db;
+
+    transition:.3s;
+
+}
+
+.footer-menu li a:hover{
+
+    color:#0d6efd;
+
+    text-decoration:none;
+
+}
+
+
+/*==================================
+        SCROLLBAR
+==================================*/
+
+.table-responsive::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+
+    background:#0d6efd;
+
+    border-radius:10px;
+
+}
+
+.table-responsive::-webkit-scrollbar-track{
+
+    background:#edf2f7;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.no-order-card{
+
+    padding:35px 25px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.floating-social-buttons{
+
+    right:15px;
+
+    bottom:15px;
+
+}
+
+.floating-btn{
+
+    width:48px;
+
+    height:48px;
+
+}
+
+.floating-icon{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+.no-order-card{
+
+    padding:25px 20px;
+
+}
+
+.no-order-title{
+
+    font-size:22px;
+
+}
+
+.no-order-text{
+
+    font-size:14px;
+
+}
+
+.new-order-btn{
+
+    width:100%;
+
+}
+
+.footer-text{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+.footer-menu{
+
+    text-align:center;
+
+}
+
+.footer-menu li{
+
+    display:block;
+
+    margin:10px 0;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.no-order-card{
+
+    padding:20px 15px;
+
+}
+
+.no-order-icon{
+
+    font-size:48px;
+
+}
+
+.no-order-title{
+
+    font-size:20px;
+
+}
+
+.no-order-text{
+
+    font-size:13px;
+
+}
+
+.floating-btn{
+
+    width:45px;
+
+    height:45px;
+
+}
+
+.floating-icon{
+
+    width:20px;
+
+    height:20px;
+
+}
+
+}

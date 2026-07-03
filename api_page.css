@@ -1,0 +1,1260 @@
+.custom-navbar{
+    background:#fff;
+    border:none;
+    border-radius:0;
+    margin-bottom:0;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.custom-navbar .navbar-brand.logo{
+    color:#0d6efd;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+    height:70px;
+    line-height:40px;
+}
+
+.custom-navbar .navbar-nav>li>a{
+
+    color:#444;
+    font-size:15px;
+    font-weight:600;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.custom-navbar .navbar-nav>li>a:hover{
+    color:#0d6efd;
+    background:transparent;
+}
+
+.custom-navbar .navbar-nav>.active>a,
+.custom-navbar .navbar-nav>.active>a:hover{
+    background:transparent;
+    color:#0d6efd;
+}
+
+.navbar-toggle{
+    margin-top:18px;
+}
+/*==================================================
+        API DOCS CSS - PART 1
+        Layout + Card + Tables
+==================================================*/
+
+
+/*==================================
+        PAGE
+==================================*/
+
+.api-docs-section{
+
+    background:#f5f7fb;
+
+    padding:30px 0;
+
+    min-height:100vh;
+
+}
+
+
+/*==================================
+        MAIN CARD
+==================================*/
+
+.api-docs-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+/*==================================
+        PAGE TITLE
+==================================*/
+
+.api-page-title{
+
+    margin:0 0 25px;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#222;
+
+    border-bottom:2px solid #edf2f7;
+
+    padding-bottom:15px;
+
+}
+
+
+/*==================================
+        API BLOCK
+==================================*/
+
+.api-block{
+
+    margin-top:40px;
+
+}
+
+.api-block-title{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:#0d6efd;
+
+    margin-bottom:20px;
+
+}
+
+
+/*==================================
+        API INFO TABLE
+==================================*/
+
+.api-info-table{
+
+    margin-bottom:30px;
+
+    border:1px solid #e6edf7;
+
+}
+
+.api-info-table th{
+
+    width:220px;
+
+    background:#f8fbff;
+
+    color:#333;
+
+    font-weight:600;
+
+    padding:14px;
+
+    vertical-align:middle;
+
+}
+
+.api-info-table td{
+
+    padding:14px;
+
+    color:#555;
+
+    vertical-align:middle;
+
+}
+
+
+/*==================================
+        GENERAL TABLE
+==================================*/
+
+.api-table{
+
+    margin-bottom:25px;
+
+    border:1px solid #e6edf7;
+
+}
+
+.api-table thead{
+
+    background:#0d6efd;
+
+}
+
+.api-table thead th{
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:14px;
+
+    border:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.api-table tbody td{
+
+    padding:13px;
+
+    border-top:1px solid #edf2f7;
+
+    color:#444;
+
+    vertical-align:middle;
+
+}
+
+.api-table tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+
+/*==================================
+        COLUMN WIDTH
+==================================*/
+
+.api-title-column{
+
+    width:220px;
+
+}
+
+.api-value-column{
+
+    word-break:break-word;
+
+}
+
+
+/*==================================
+        RESPONSIVE TABLE
+==================================*/
+
+.table-responsive{
+
+    border:none;
+
+}
+
+
+/*==================================
+        TABLE SCROLLBAR
+==================================*/
+
+.table-responsive::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+
+    background:#0d6efd;
+
+    border-radius:10px;
+
+}
+
+.table-responsive::-webkit-scrollbar-track{
+
+    background:#edf2f7;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.api-docs-card{
+
+    padding:25px;
+
+}
+
+.api-page-title{
+
+    font-size:26px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.api-docs-section{
+
+    padding:15px 0;
+
+}
+
+.api-docs-card{
+
+    padding:18px;
+
+    border-radius:12px;
+
+}
+
+.api-page-title{
+
+    font-size:22px;
+
+}
+
+.api-block-title{
+
+    font-size:20px;
+
+}
+
+.api-info-table th,
+
+.api-info-table td,
+
+.api-table th,
+
+.api-table td{
+
+    padding:10px;
+
+    font-size:13px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.api-docs-card{
+
+    padding:15px;
+
+}
+
+.api-page-title{
+
+    font-size:20px;
+
+}
+
+.api-block-title{
+
+    font-size:18px;
+
+}
+
+.api-info-table th{
+
+    width:140px;
+
+}
+
+}
+/*==================================================
+        API DOCS CSS - PART 2
+        Code Box + Dropdown + Response
+==================================================*/
+
+
+/*==================================
+        METHOD DROPDOWN
+==================================*/
+
+.api-method-box{
+
+    margin-bottom:25px;
+
+    max-width:300px;
+
+}
+
+.api-method-select{
+
+    height:46px;
+
+    border:1px solid #d9e3f2;
+
+    border-radius:8px;
+
+    box-shadow:none;
+
+    transition:.3s;
+
+    font-size:14px;
+
+}
+
+.api-method-select:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 0 3px rgba(13,110,253,.12);
+
+}
+
+
+/*==================================
+        RESPONSE TITLE
+==================================*/
+
+.api-response-title{
+
+    margin:25px 0 15px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+
+/*==================================
+        CODE BOX
+==================================*/
+
+.api-code-box{
+
+    background:#1e293b;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    margin-bottom:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+/*==================================
+        PRE CODE
+==================================*/
+
+.api-code{
+
+    margin:0;
+
+    padding:20px;
+
+    color:#e2e8f0;
+
+    background:transparent;
+
+    border:none;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    font-family:Consolas, Monaco, monospace;
+
+    white-space:pre-wrap;
+
+    word-break:break-word;
+
+    overflow-x:auto;
+
+}
+
+
+/*==================================
+        API INFO WRAPPER
+==================================*/
+
+.api-info-wrapper{
+
+    margin-bottom:30px;
+
+}
+
+
+/*==================================
+        TABLE INSIDE BLOCK
+==================================*/
+
+.api-block .api-table{
+
+    margin-top:15px;
+
+}
+
+
+/*==================================
+        API LABEL
+==================================*/
+
+.api-table tbody td:first-child{
+
+    font-weight:600;
+
+    color:#0d6efd;
+
+    width:230px;
+
+}
+
+
+/*==================================
+        API VALUE
+==================================*/
+
+.api-table tbody td:last-child{
+
+    color:#555;
+
+}
+
+
+/*==================================
+        CODE SCROLLBAR
+==================================*/
+
+.api-code::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.api-code::-webkit-scrollbar-thumb{
+
+    background:#4b5563;
+
+    border-radius:10px;
+
+}
+
+.api-code::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.api-method-box{
+
+    max-width:260px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.api-method-box{
+
+    max-width:100%;
+
+}
+
+.api-method-select{
+
+    height:44px;
+
+    font-size:13px;
+
+}
+
+.api-response-title{
+
+    font-size:16px;
+
+}
+
+.api-code{
+
+    padding:15px;
+
+    font-size:13px;
+
+}
+
+.api-table tbody td:first-child{
+
+    width:170px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.api-method-select{
+
+    height:42px;
+
+    font-size:12px;
+
+}
+
+.api-code{
+
+    padding:12px;
+
+    font-size:12px;
+
+    line-height:1.6;
+
+}
+
+.api-response-title{
+
+    font-size:15px;
+
+}
+
+.api-table tbody td:first-child{
+
+    width:140px;
+
+}
+
+}
+/*==================================================
+        API DOCS CSS - PART 3
+        Footer + Buttons + Utilities
+==================================================*/
+
+
+/*==================================
+        FOOTER NOTE
+==================================*/
+
+.api-footer-note{
+
+    margin-top:35px;
+
+    padding:18px 22px;
+
+    background:#fff8e6;
+
+    border-left:5px solid #f0ad4e;
+
+    border-radius:8px;
+
+}
+
+.api-note-text{
+
+    margin:0;
+
+    color:#555;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+.api-note-text strong{
+
+    color:#222;
+
+}
+
+
+/*==================================
+        BUTTONS
+==================================*/
+
+.api-btn{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    border-radius:6px;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border:none;
+
+    transition:.3s ease;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.api-btn:hover{
+
+    background:#0b5ed7;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(13,110,253,.25);
+
+}
+
+
+/*==================================
+        BLOCK HOVER
+==================================*/
+
+.api-block{
+
+    transition:.3s;
+
+}
+
+.api-block:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/*==================================
+        TABLE HOVER
+==================================*/
+
+.api-table tbody tr{
+
+    transition:.25s;
+
+}
+
+.api-table tbody tr:hover{
+
+    background:#f4f8ff;
+
+}
+
+
+/*==================================
+        LINKS
+==================================*/
+
+.api-docs-card a{
+
+    color:#0d6efd;
+
+    transition:.3s;
+
+}
+
+.api-docs-card a:hover{
+
+    color:#084298;
+
+    text-decoration:none;
+
+}
+
+
+/*==================================
+        HORIZONTAL LINE
+==================================*/
+
+.api-divider{
+
+    margin:35px 0;
+
+    border-top:1px solid #e9edf3;
+
+}
+
+
+/*==================================
+        SCROLL TO TOP
+==================================*/
+
+.api-scroll-top{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:50px;
+
+    height:50px;
+
+    line-height:50px;
+
+    text-align:center;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:9999;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(13,110,253,.25);
+
+}
+
+.api-scroll-top:hover{
+
+    background:#0b5ed7;
+
+    color:#fff;
+
+}
+
+
+/*==================================
+        FADE ANIMATION
+==================================*/
+
+.api-docs-card{
+
+    animation:apiFade .6s ease;
+
+}
+
+@keyframes apiFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.api-footer-note{
+
+    padding:16px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.api-note-text{
+
+    font-size:13px;
+
+}
+
+.api-btn{
+
+    width:100%;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.api-scroll-top{
+
+    width:45px;
+
+    height:45px;
+
+    line-height:45px;
+
+    right:15px;
+
+    bottom:15px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.api-footer-note{
+
+    padding:14px;
+
+}
+
+.api-note-text{
+
+    font-size:12px;
+
+}
+
+.api-scroll-top{
+
+    width:40px;
+
+    height:40px;
+
+    line-height:40px;
+
+    font-size:15px;
+
+}
+
+}
+/*==================================================
+        API DOCS CSS - PART 4
+        Final Responsive + Animation
+==================================================*/
+
+
+/*==================================
+        CUSTOM SCROLLBAR
+==================================*/
+
+body::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+body::-webkit-scrollbar-track{
+
+    background:#eef2f7;
+
+}
+
+body::-webkit-scrollbar-thumb{
+
+    background:#0d6efd;
+
+    border-radius:10px;
+
+}
+
+body::-webkit-scrollbar-thumb:hover{
+
+    background:#0b5ed7;
+
+}
+
+
+/*==================================
+        SMOOTH SCROLL
+==================================*/
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/*==================================
+        SELECTION COLOR
+==================================*/
+
+::selection{
+
+    background:#0d6efd;
+
+    color:#ffffff;
+
+}
+
+
+/*==================================
+        CODE BLOCK EFFECT
+==================================*/
+
+.api-code-box{
+
+    transition:.3s ease;
+
+}
+
+.api-code-box:hover{
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+
+/*==================================
+        TABLE ANIMATION
+==================================*/
+
+.api-table{
+
+    animation:tableFade .5s ease;
+
+}
+
+@keyframes tableFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================
+        PRINT STYLE
+==================================*/
+
+@media print{
+
+    .api-docs-section{
+
+        background:#ffffff;
+
+        padding:0;
+
+    }
+
+    .api-docs-card{
+
+        box-shadow:none;
+
+        border:1px solid #cccccc;
+
+    }
+
+    .api-code-box{
+
+        background:#f5f5f5;
+
+        color:#000;
+
+        box-shadow:none;
+
+    }
+
+    .api-code{
+
+        color:#000;
+
+    }
+
+}
+
+
+/*==================================
+        LARGE DESKTOP
+==================================*/
+
+@media(min-width:1200px){
+
+.api-docs-card{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+}
+
+
+/*==================================
+        TABLET
+==================================*/
+
+@media(max-width:991px){
+
+.api-page-title{
+
+    text-align:center;
+
+}
+
+.api-block{
+
+    margin-top:30px;
+
+}
+
+}
+
+
+/*==================================
+        MOBILE
+==================================*/
+
+@media(max-width:767px){
+
+.api-docs-card{
+
+    padding:15px;
+
+}
+
+.api-table{
+
+    display:block;
+
+    overflow-x:auto;
+
+    white-space:nowrap;
+
+}
+
+.api-info-table{
+
+    display:block;
+
+    overflow-x:auto;
+
+    white-space:nowrap;
+
+}
+
+.api-code{
+
+    font-size:12px;
+
+    line-height:1.6;
+
+}
+
+}
+
+
+/*==================================
+        SMALL MOBILE
+==================================*/
+
+@media(max-width:480px){
+
+.api-page-title{
+
+    font-size:20px;
+
+}
+
+.api-block-title{
+
+    font-size:18px;
+
+}
+
+.api-response-title{
+
+    font-size:15px;
+
+}
+
+.api-code{
+
+    font-size:11px;
+
+}
+
+.api-note-text{
+
+    font-size:12px;
+
+}
+
+}
+
+
+/*==================================
+        FINAL OPTIMIZATION
+==================================*/
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+table{
+
+    width:100%;
+
+}
+
+pre{
+
+    margin:0;
+
+    border:none;
+
+}
+
+*{
+
+    box-sizing:border-box;
+
+}

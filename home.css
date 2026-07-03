@@ -1,0 +1,1398 @@
+
+
+/*==============================
+        GLOBAL
+===============================*/
+
+body{
+    background:#f4f7fb;
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-size:14px;
+    color:#333;
+}
+
+.dashboard-section{
+    padding:30px 0;
+}
+
+.dashboard-section .container{
+    max-width:900px;
+}
+ 
+/*==================================================
+    2. BUTTONS
+==================================================*/
+
+.btn{
+    border-radius:30px;
+    padding:12px 30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.hero-btn{
+    margin:8px;
+}
+
+
+/*==============================
+        NAVBAR
+===============================*/
+
+
+.custom-navbar{
+    background:#fff;
+    border:none;
+    border-radius:0;
+    margin-bottom:0;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.custom-navbar .navbar-brand.logo{
+    color:#0d6efd;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+    height:70px;
+    line-height:40px;
+}
+
+.custom-navbar .navbar-nav>li>a{
+
+    color:#444;
+    font-size:15px;
+    font-weight:600;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.custom-navbar .navbar-nav>li>a:hover{
+    color:#0d6efd;
+    background:transparent;
+}
+
+.custom-navbar .navbar-nav>.active>a,
+.custom-navbar .navbar-nav>.active>a:hover{
+    background:transparent;
+    color:#0d6efd;
+}
+
+.navbar-toggle{
+    margin-top:18px;
+}
+
+/*==============================
+        COMMON CARD
+===============================*/
+
+.dashboard-card{
+
+    background:#ffffff;
+
+    border-radius:14px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+
+/*==============================
+        CARD ICON
+===============================*/
+
+.card-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#eef4ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    color:#3b82f6;
+
+    margin-right:20px;
+
+}
+
+
+/*==============================
+        CARD CONTENT
+===============================*/
+
+.card-content{
+
+    flex:1;
+
+}
+
+.balance-amount{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+.balance-title{
+
+    margin-top:8px;
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+
+/*==============================
+        CARD ACTION
+===============================*/
+
+.card-action{
+
+    margin-left:20px;
+
+}
+
+.add-funds-btn{
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.add-funds-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/*==============================
+        DIFFERENT CARD COLORS
+===============================*/
+
+.balance-card{
+
+    border-left:5px solid #28a745;
+
+}
+
+.spent-card{
+
+    border-left:5px solid #dc3545;
+
+}
+
+.orders-card{
+
+    border-left:5px solid #0d6efd;
+
+}
+
+
+/*==============================
+        RESPONSIVE
+===============================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.dashboard-card{
+
+    padding:20px;
+
+}
+
+.balance-amount{
+
+    font-size:26px;
+
+}
+
+}
+
+
+/* Mobile */
+
+
+@media(max-width:767px){
+
+.dashboard-navbar{
+
+    padding:15px;
+
+}
+
+
+.dashboard-logo{
+
+    font-size:20px;
+
+}
+
+.dashboard-card{
+
+    display:block;
+
+    text-align:center;
+
+    padding:25px 20px;
+
+}
+
+.card-icon{
+
+    margin:0 auto 20px;
+
+}
+
+.card-action{
+
+    margin:20px 0 0;
+
+}
+
+.add-funds-btn{
+
+    width:100%;
+
+}
+
+.balance-amount{
+
+    font-size:24px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.dashboard-section{
+
+    padding:15px 0;
+
+}
+
+.dashboard-navbar{
+
+    border-radius:8px;
+
+}
+
+.dashboard-card{
+
+    border-radius:10px;
+
+}
+
+.balance-amount{
+
+    font-size:22px;
+
+}
+
+.balance-title{
+
+    font-size:14px;
+
+}
+
+}
+/*==================================================
+        DASHBOARD CSS PART 2
+        Order Form Section
+==================================================*/
+
+
+/*==============================
+        ORDER FORM SECTION
+===============================*/
+
+.order-form-section{
+    padding:25px 0;
+}
+
+.order-form-card{
+    background:#ffffff;
+    border-radius:14px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+
+/*==============================
+        FORM LABEL
+===============================*/
+
+.form-label{
+    display:block;
+    font-size:15px;
+    font-weight:600;
+    color:#333;
+    margin-bottom:10px;
+}
+
+
+/*==============================
+        INPUT & SELECT
+===============================*/
+
+.search-service-input,
+.category-select,
+.service-select,
+.service-description{
+
+    width:100%;
+    border:1px solid #dcdfe6;
+    border-radius:10px;
+    background:#fff;
+    color:#333;
+    font-size:15px;
+    transition:.3s;
+    box-shadow:none;
+
+}
+
+.search-service-input,
+.category-select,
+.service-select{
+
+    height:48px;
+    padding:10px 15px;
+
+}
+
+.service-description{
+
+    min-height:250px;
+    padding:15px;
+    resize:vertical;
+    line-height:1.8;
+
+}
+
+
+/*==============================
+        FOCUS EFFECT
+===============================*/
+
+.search-service-input:focus,
+.category-select:focus,
+.service-select:focus,
+.service-description:focus{
+
+    border-color:#3b82f6;
+    box-shadow:0 0 0 4px rgba(59,130,246,.12);
+
+}
+
+
+/*==============================
+        PLACEHOLDER
+===============================*/
+
+.search-service-input::placeholder{
+
+    color:#999;
+
+}
+
+
+/*==============================
+        SELECT BOX
+===============================*/
+
+.category-select,
+.service-select{
+
+    cursor:pointer;
+
+}
+
+
+/*==============================
+        DESCRIPTION BOX
+===============================*/
+
+.service-description{
+
+    background:#f9fbfd;
+    color:#555;
+    font-size:14px;
+
+}
+
+
+/*==============================
+        FORM GROUP
+===============================*/
+
+.form-group{
+
+    margin-bottom:25px;
+
+}
+
+
+/*==============================
+        CARD HOVER
+===============================*/
+
+.order-form-card{
+
+    transition:.35s;
+
+}
+
+.order-form-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+/*==============================
+        SCROLLBAR
+===============================*/
+
+.service-description::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.service-description::-webkit-scrollbar-thumb{
+
+    background:#c9d4e5;
+    border-radius:20px;
+
+}
+
+.service-description::-webkit-scrollbar-track{
+
+    background:#eef2f7;
+
+}
+
+
+/*==============================
+        RESPONSIVE
+===============================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.order-form-card{
+
+    padding:25px;
+
+}
+
+.service-description{
+
+    min-height:220px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.order-form-section{
+
+    padding:15px 0;
+
+}
+
+.order-form-card{
+
+    padding:20px;
+    border-radius:12px;
+
+}
+
+.form-label{
+
+    font-size:14px;
+
+}
+
+.search-service-input,
+.category-select,
+.service-select{
+
+    height:44px;
+    font-size:14px;
+
+}
+
+.service-description{
+
+    min-height:180px;
+    font-size:13px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.order-form-card{
+
+    padding:18px;
+
+}
+
+.search-service-input,
+.category-select,
+.service-select{
+
+    height:42px;
+    padding:8px 12px;
+
+}
+
+.service-description{
+
+    padding:12px;
+
+}
+
+}
+/*==================================================
+        DASHBOARD CSS PART 3
+        Order Details Section
+==================================================*/
+
+
+/*==============================
+        ORDER DETAILS
+===============================*/
+
+.order-details-section{
+    padding:25px 0 40px;
+}
+
+.order-details-card{
+    background:#ffffff;
+    border-radius:14px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:all .35s ease;
+}
+
+.order-details-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+
+/*==============================
+        INPUT FIELDS
+===============================*/
+
+.order-link-input,
+.average-time-input,
+.quantity-input,
+.charge-input{
+
+    width:100%;
+    height:48px;
+    border:1px solid #dcdfe6;
+    border-radius:10px;
+    background:#fff;
+    color:#333;
+    font-size:15px;
+    padding:10px 15px;
+    transition:all .3s ease;
+    box-shadow:none;
+
+}
+
+.order-link-input:focus,
+.average-time-input:focus,
+.quantity-input:focus,
+.charge-input:focus{
+
+    border-color:#3b82f6;
+    box-shadow:0 0 0 4px rgba(59,130,246,.12);
+
+}
+
+
+/*==============================
+        PLACEHOLDER
+===============================*/
+
+.order-link-input::placeholder,
+.quantity-input::placeholder{
+
+    color:#999;
+
+}
+
+
+/*==============================
+        READONLY INPUT
+===============================*/
+
+.average-time-input,
+.charge-input{
+
+    background:#f8fafc;
+    cursor:not-allowed;
+    font-weight:600;
+    color:#666;
+
+}
+
+
+/*==============================
+        QUANTITY NOTE
+===============================*/
+
+.quantity-note{
+
+    display:block;
+    margin-top:8px;
+    color:#777;
+    font-size:13px;
+
+}
+
+
+/*==============================
+        CHARGE BOX
+===============================*/
+
+.charge-box{
+
+    position:relative;
+
+}
+
+.currency-symbol{
+
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#3b82f6;
+    font-weight:700;
+    font-size:16px;
+    z-index:2;
+
+}
+
+.charge-input{
+
+    padding-left:40px;
+
+}
+
+
+/*==============================
+        SUBMIT BUTTON
+===============================*/
+
+.submit-group{
+
+    margin-top:35px;
+    margin-bottom:0;
+
+}
+
+.submit-order-btn{
+
+    width:100%;
+    height:52px;
+    border:none;
+    border-radius:10px;
+    background:#3b82f6;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    transition:all .3s ease;
+
+}
+
+.submit-order-btn:hover{
+
+    background:#2563eb;
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(59,130,246,.30);
+
+}
+
+.submit-order-btn .glyphicon{
+
+    margin-right:8px;
+
+}
+
+
+/*==============================
+        FORM SPACING
+===============================*/
+
+.order-details-card .form-group{
+
+    margin-bottom:25px;
+
+}
+
+
+/*==============================
+        RESPONSIVE
+===============================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.order-details-card{
+
+    padding:25px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.order-details-section{
+
+    padding:15px 0 30px;
+
+}
+
+.order-details-card{
+
+    padding:20px;
+    border-radius:12px;
+
+}
+
+.order-link-input,
+.average-time-input,
+.quantity-input,
+.charge-input{
+
+    height:44px;
+    font-size:14px;
+
+}
+
+.submit-order-btn{
+
+    height:48px;
+    font-size:15px;
+
+}
+
+.quantity-note{
+
+    font-size:12px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.order-details-card{
+
+    padding:18px;
+
+}
+
+.order-link-input,
+.average-time-input,
+.quantity-input,
+.charge-input{
+
+    height:42px;
+    padding:8px 12px;
+
+}
+
+.charge-input{
+
+    padding-left:38px;
+
+}
+
+.currency-symbol{
+
+    left:12px;
+
+}
+
+.submit-order-btn{
+
+    height:45px;
+    font-size:14px;
+
+}
+
+}
+/*==================================================
+        DASHBOARD CSS PART 4
+        Notice + Footer + Floating Buttons
+==================================================*/
+
+
+/*==========================================
+        TELEGRAM NOTICE
+==========================================*/
+
+.dashboard-bottom-section{
+    padding:30px 0 50px;
+}
+
+.telegram-notice-card{
+
+    background:linear-gradient(135deg,#0d6efd,#3b82f6);
+
+    border-radius:15px;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:#fff;
+
+    margin-bottom:30px;
+
+    box-shadow:0 15px 35px rgba(13,110,253,.20);
+
+}
+
+.telegram-notice-text{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.telegram-join-btn{
+
+    min-width:220px;
+
+    height:50px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    font-size:16px;
+
+    background:#fff;
+
+    color:#0d6efd;
+
+    border:none;
+
+    transition:.3s;
+
+}
+
+.telegram-join-btn:hover{
+
+    background:#f8f9fa;
+
+    color:#0d6efd;
+
+    transform:translateY(-3px);
+
+}
+
+
+/*==========================================
+            SUPPORT CARD
+==========================================*/
+
+.support-card{
+
+    background:#fff;
+
+    border-radius:14px;
+
+    padding:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+    transition:.3s;
+
+}
+
+.support-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+.support-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#eef5ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    color:#0d6efd;
+
+    margin-right:20px;
+
+}
+
+.support-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.support-description{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/*==========================================
+        INFORMATION CARD
+==========================================*/
+
+.information-card{
+
+    background:#fff;
+
+    border-radius:14px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.info-item{
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.info-icon{
+
+    font-size:40px;
+
+    color:#0d6efd;
+
+    margin-bottom:15px;
+
+}
+
+.info-item h5{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.info-item p{
+
+    color:#777;
+
+    margin:0;
+
+}
+
+
+/*==========================================
+        FLOATING BUTTONS
+==========================================*/
+
+.floating-buttons{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:999;
+
+}
+
+.floating-btn{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin-top:15px;
+
+    text-decoration:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+    transition:.3s;
+
+}
+
+.telegram-btn{
+
+    background:#0088cc;
+
+}
+
+.whatsapp-btn{
+
+    background:#25D366;
+
+}
+
+.floating-btn:hover{
+
+    color:#fff;
+
+    transform:scale(1.08);
+
+}
+
+
+/*==========================================
+            FOOTER
+==========================================*/
+
+.dashboard-footer{
+
+    background:#1f2937;
+
+    color:#cbd5e1;
+
+    padding:25px 0;
+
+    margin-top:40px;
+
+}
+
+.footer-left{
+
+    margin:0;
+
+}
+
+.footer-menu{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.footer-menu li{
+
+    display:inline-block;
+
+    margin-left:20px;
+
+}
+
+.footer-menu li a{
+
+    color:#cbd5e1;
+
+    transition:.3s;
+
+}
+
+.footer-menu li a:hover{
+
+    color:#0d6efd;
+
+    text-decoration:none;
+
+}
+
+
+/*==========================================
+            RESPONSIVE
+==========================================*/
+
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.support-card{
+
+    padding:25px;
+
+}
+
+.telegram-notice-card{
+
+    padding:30px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.telegram-notice-card{
+
+    padding:25px 20px;
+
+}
+
+.telegram-notice-text{
+
+    font-size:15px;
+
+}
+
+.telegram-join-btn{
+
+    width:100%;
+
+}
+
+.support-card{
+
+    display:block;
+
+    text-align:center;
+
+}
+
+.support-icon{
+
+    margin:0 auto 20px;
+
+}
+
+.information-card{
+
+    padding:20px;
+
+}
+
+.info-item{
+
+    margin-bottom:20px;
+
+}
+
+.footer-left{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+.footer-menu{
+
+    text-align:center;
+
+}
+
+.footer-menu li{
+
+    display:block;
+
+    margin:10px 0;
+
+}
+
+.floating-buttons{
+
+    right:15px;
+
+    bottom:15px;
+
+}
+
+.floating-btn{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:20px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.telegram-notice-card{
+
+    border-radius:10px;
+
+}
+
+.support-card{
+
+    border-radius:10px;
+
+}
+
+.information-card{
+
+    border-radius:10px;
+
+}
+
+.support-title{
+
+    font-size:20px;
+
+}
+
+.info-item h5{
+
+    font-size:16px;
+
+}
+
+.info-item p{
+
+    font-size:13px;
+
+}
+
+.floating-btn{
+
+    width:45px;
+
+    height:45px;
+
+    font-size:18px;
+
+}
+
+}
